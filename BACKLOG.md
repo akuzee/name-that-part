@@ -57,6 +57,17 @@ Deferred ideas with rationale. Research findings dated 2026-09-01.
   Kit (account-free) is the base if we ever want prettier panels (cut+name in
   Blender, ~1hr). Procedural whole-car shipped instead.
 
+## Model fidelity (top contribution target)
+
+Only the BodyParts3D anatomy packs are high-detail; the procedural packs
+(house, engine, car, cells, flower, PC, chip) are schematic primitives. Two
+upgrade paths per pack, in order of preference:
+1. Swap in a detailed CC-licensed glTF with named parts (candidates with URLs
+   below — most need a free Sketchfab account + a Blender rename pass, then
+   `tools/inspect-glb.mjs --manifest`).
+2. Enrich the `build.mjs` geometry (pure code, no assets): bevels, bird's-mouth
+   rafter cuts, bored engine block, lathed organelles, PCB texture detail.
+
 ## Harness features
 
 - **Type-the-name mode** (reverse quiz: part highlighted, you type/choose the

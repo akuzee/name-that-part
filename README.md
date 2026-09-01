@@ -85,6 +85,24 @@ downloaded model.
 Procedural models are generated as named Three.js meshes at load time — zero
 licensing burden, guaranteed-correct names, tiny payload.
 
+## Known limitation: model fidelity
+
+The anatomy packs are detailed (real scan-derived meshes from BodyParts3D);
+everything else is **deliberately schematic** — procedural primitives with
+textbook proportions. Parts are correct and clickable, but a stud is a box and
+a piston is a cylinder. This is the main area where contributions help:
+
+- **Replace a procedural pack with a detailed model**: any glTF whose parts are
+  separate, sensibly named meshes drops in — run
+  `node tools/inspect-glb.mjs model.glb --manifest`, edit names/layers/quizzes,
+  add a catalog entry. Vetted CC-BY candidates (engine, cell, flower, PC,
+  phone teardown, car chassis) are listed with URLs in [BACKLOG.md](BACKLOG.md);
+  most just need a free Sketchfab account to download plus a rename pass in
+  Blender.
+- **Upgrade a procedural builder**: each model is one self-contained
+  `build.mjs` — more detailed geometry (bird's-mouthed rafters, a bored engine
+  block, ribbed organelles) is a pure-code contribution with no asset pipeline.
+
 Anatomy packs share one STL cache, `data/bp3d/` (gitignored, ~600MB,
 regenerable): `node tools/fetch-anatomy.mjs [pack…]` downloads from the
 BodyParts3D GitHub mirror and rebuilds each pack's manifest. Name-matching is
