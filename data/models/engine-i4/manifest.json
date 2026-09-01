@@ -1,0 +1,53 @@
+{
+  "id": "engine-i4",
+  "title": "Inline-4 Engine",
+  "blurb": "A schematic four-cylinder engine — block, rotating assembly, valvetrain, intake/exhaust and accessories, every component named.",
+  "attribution": "Generated procedurally for this project (proportions follow a typical SOHC inline-4).",
+  "license": "No license restrictions — original geometry.",
+  "source": { "kind": "procedural", "module": "build.mjs" },
+  "camera": { "theta": 0.9, "phi": 1.15, "zoom": 1.1 },
+  "layers": [
+    { "id": "covers", "name": "Covers & pan", "color": "#5f6a75" },
+    { "id": "head", "name": "Head & valvetrain", "color": "#8b939e" },
+    { "id": "block", "name": "Block", "color": "#7d858f" },
+    { "id": "rotating", "name": "Rotating assembly", "color": "#aab2bc" },
+    { "id": "external", "name": "Intake, exhaust & accessories", "color": "#6e7681" }
+  ],
+  "parts": {
+    "engine-block": { "name": "Engine block", "layer": "block", "color": "#6f7780" },
+    "oil-pan": { "name": "Oil pan", "layer": "covers", "color": "#4a525b" },
+    "valve-cover": { "name": "Valve cover", "layer": "covers", "color": "#57616c" },
+    "head-gasket": { "name": "Head gasket", "layer": "head", "color": "#454b52" },
+    "cylinder-head": { "name": "Cylinder head", "layer": "head", "color": "#828a94" },
+    "camshaft": { "name": "Camshaft", "layer": "head", "color": "#c8ced6" },
+    "intake-valve": { "name": "Intake valve", "layer": "head", "color": "#d7dde4" },
+    "exhaust-valve": { "name": "Exhaust valve", "layer": "head", "color": "#b48a5a" },
+    "valve-spring": { "name": "Valve spring", "layer": "head", "color": "#d0a43c" },
+    "spark-plug": { "name": "Spark plug", "layer": "head", "color": "#e8e4d8" },
+    "cam-sprocket": { "name": "Camshaft sprocket", "layer": "head", "color": "#9aa2ac" },
+    "piston": { "name": "Piston", "layer": "rotating", "color": "#d9dee5" },
+    "connecting-rod": { "name": "Connecting rod", "layer": "rotating", "color": "#b7bfc9" },
+    "crankshaft": { "name": "Crankshaft", "layer": "rotating", "color": "#8f99a4" },
+    "flywheel": { "name": "Flywheel", "layer": "rotating", "color": "#7c848e" },
+    "crank-pulley": { "name": "Crank pulley (harmonic balancer)", "layer": "rotating", "color": "#6a727c" },
+    "crank-sprocket": { "name": "Crankshaft sprocket", "layer": "rotating", "color": "#9aa2ac" },
+    "timing-belt": { "name": "Timing belt", "layer": "rotating", "color": "#2e3338" },
+    "intake-plenum": { "name": "Intake plenum", "layer": "external", "color": "#5d6670" },
+    "intake-runner": { "name": "Intake runner", "layer": "external", "color": "#6d7681" },
+    "throttle-body": { "name": "Throttle body", "layer": "external", "color": "#9aa2ac" },
+    "air-filter": { "name": "Air filter housing", "layer": "external", "color": "#3f464e" },
+    "exhaust-runner": { "name": "Exhaust manifold runner", "layer": "external", "color": "#8a6a4f" },
+    "exhaust-collector": { "name": "Exhaust collector", "layer": "external", "color": "#77593f" },
+    "alternator": { "name": "Alternator", "layer": "external", "color": "#aeb5be" },
+    "water-pump": { "name": "Water pump", "layer": "external", "color": "#8d959f" },
+    "oil-filter": { "name": "Oil filter", "layer": "external", "color": "#e0e3e8" },
+    "starter-motor": { "name": "Starter motor", "layer": "external", "color": "#5a626c" },
+    "dipstick": { "name": "Dipstick", "layer": "external", "color": "#d0a43c" }
+  },
+  "quizzes": [
+    { "id": "bottom-end", "title": "Bottom end", "subtitle": "The rotating assembly", "parts": { "layer": "rotating" } },
+    { "id": "top-end", "title": "Top end", "subtitle": "Head and valvetrain", "parts": { "layer": "head" } },
+    { "id": "external", "title": "Bolt-ons", "subtitle": "Intake, exhaust and accessories", "parts": { "layer": "external" } },
+    { "id": "all", "title": "Everything", "subtitle": "The complete engine", "parts": "all" }
+  ]
+}

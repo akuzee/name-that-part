@@ -1,0 +1,1097 @@
+{
+  "id": "skeleton",
+  "title": "Human Skeleton",
+  "blurb": "Every bone from the BodyParts3D anatomical database — skull, spine, thorax and limbs.",
+  "attribution": "BodyParts3D, © The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan (via github.com/Kevin-Mattheus-Moerman/BodyParts3D).",
+  "license": "CC BY-SA 2.1 JP",
+  "source": {
+    "kind": "stl-set",
+    "dir": "../../bp3d/",
+    "rotate": [
+      -1.5707963,
+      0,
+      0
+    ],
+    "files": [
+      {
+        "file": "FMA52734.stl",
+        "part": "frontal-bone"
+      },
+      {
+        "file": "FMA52788.stl",
+        "part": "parietal-bone"
+      },
+      {
+        "file": "FMA52789.stl",
+        "part": "parietal-bone"
+      },
+      {
+        "file": "FMA52738.stl",
+        "part": "temporal-bone"
+      },
+      {
+        "file": "FMA52739.stl",
+        "part": "temporal-bone"
+      },
+      {
+        "file": "FMA52735.stl",
+        "part": "occipital-bone"
+      },
+      {
+        "file": "FMA52736.stl",
+        "part": "sphenoid"
+      },
+      {
+        "file": "FMA52740.stl",
+        "part": "ethmoid"
+      },
+      {
+        "file": "FMA52892.stl",
+        "part": "zygomatic-bone"
+      },
+      {
+        "file": "FMA52893.stl",
+        "part": "zygomatic-bone"
+      },
+      {
+        "file": "FMA53649.stl",
+        "part": "maxilla"
+      },
+      {
+        "file": "FMA53650.stl",
+        "part": "maxilla"
+      },
+      {
+        "file": "FMA53647.stl",
+        "part": "nasal-bone"
+      },
+      {
+        "file": "FMA53648.stl",
+        "part": "nasal-bone"
+      },
+      {
+        "file": "FMA9710.stl",
+        "part": "vomer"
+      },
+      {
+        "file": "FMA52748.stl",
+        "part": "mandible"
+      },
+      {
+        "file": "FMA52749.stl",
+        "part": "hyoid"
+      },
+      {
+        "file": "FMA12519.stl",
+        "part": "atlas"
+      },
+      {
+        "file": "FMA12520.stl",
+        "part": "axis"
+      },
+      {
+        "file": "FMA12525.stl",
+        "part": "cervical-vertebrae"
+      },
+      {
+        "file": "FMA12521.stl",
+        "part": "cervical-vertebrae"
+      },
+      {
+        "file": "FMA12522.stl",
+        "part": "cervical-vertebrae"
+      },
+      {
+        "file": "FMA12523.stl",
+        "part": "cervical-vertebrae"
+      },
+      {
+        "file": "FMA12524.stl",
+        "part": "cervical-vertebrae"
+      },
+      {
+        "file": "FMA10014.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA10037.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA10059.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA10081.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA9165.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA9187.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA9209.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA9248.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA9922.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA9945.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA9968.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA9991.stl",
+        "part": "thoracic-vertebrae"
+      },
+      {
+        "file": "FMA13072.stl",
+        "part": "lumbar-vertebrae"
+      },
+      {
+        "file": "FMA13073.stl",
+        "part": "lumbar-vertebrae"
+      },
+      {
+        "file": "FMA13074.stl",
+        "part": "lumbar-vertebrae"
+      },
+      {
+        "file": "FMA13075.stl",
+        "part": "lumbar-vertebrae"
+      },
+      {
+        "file": "FMA13076.stl",
+        "part": "lumbar-vertebrae"
+      },
+      {
+        "file": "FMA16202.stl",
+        "part": "sacrum"
+      },
+      {
+        "file": "FMA7486.stl",
+        "part": "manubrium"
+      },
+      {
+        "file": "FMA7487.stl",
+        "part": "sternum-body"
+      },
+      {
+        "file": "FMA7488.stl",
+        "part": "xiphoid"
+      },
+      {
+        "file": "FMA7857.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA7882.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA7909.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA7957.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA7987.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8012.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8039.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8066.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8093.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8148.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8175.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8202.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8229.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8256.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8283.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8310.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8364.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8391.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8445.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8472.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8531.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8532.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8533.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA8534.stl",
+        "part": "rib"
+      },
+      {
+        "file": "FMA7875.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA7886.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA7913.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA7976.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA8005.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA8031.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA8058.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA8070.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA8112.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA8167.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA8194.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA8221.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA8248.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA8275.stl",
+        "part": "costal-cartilage"
+      },
+      {
+        "file": "FMA13322.stl",
+        "part": "clavicle"
+      },
+      {
+        "file": "FMA13323.stl",
+        "part": "clavicle"
+      },
+      {
+        "file": "FMA13395.stl",
+        "part": "scapula"
+      },
+      {
+        "file": "FMA13396.stl",
+        "part": "scapula"
+      },
+      {
+        "file": "FMA23130.stl",
+        "part": "humerus"
+      },
+      {
+        "file": "FMA23131.stl",
+        "part": "humerus"
+      },
+      {
+        "file": "FMA23464.stl",
+        "part": "radius"
+      },
+      {
+        "file": "FMA23465.stl",
+        "part": "radius"
+      },
+      {
+        "file": "FMA23467.stl",
+        "part": "ulna"
+      },
+      {
+        "file": "FMA23468.stl",
+        "part": "ulna"
+      },
+      {
+        "file": "FMA23725.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24435.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24436.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24437.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24438.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24439.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24440.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24441.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24442.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24443.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24444.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24445.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24446.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24447.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24448.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24449.stl",
+        "part": "carpal-bones"
+      },
+      {
+        "file": "FMA24464.stl",
+        "part": "metacarpals"
+      },
+      {
+        "file": "FMA24465.stl",
+        "part": "metacarpals"
+      },
+      {
+        "file": "FMA24466.stl",
+        "part": "metacarpals"
+      },
+      {
+        "file": "FMA24467.stl",
+        "part": "metacarpals"
+      },
+      {
+        "file": "FMA24468.stl",
+        "part": "metacarpals"
+      },
+      {
+        "file": "FMA24469.stl",
+        "part": "metacarpals"
+      },
+      {
+        "file": "FMA24470.stl",
+        "part": "metacarpals"
+      },
+      {
+        "file": "FMA24471.stl",
+        "part": "metacarpals"
+      },
+      {
+        "file": "FMA24472.stl",
+        "part": "metacarpals"
+      },
+      {
+        "file": "FMA24473.stl",
+        "part": "metacarpals"
+      },
+      {
+        "file": "FMA23938.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA23940.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA23942.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA23944.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA23951.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA23953.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA23955.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA23957.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA23959.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24450.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24451.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24452.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24453.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24454.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24455.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24456.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24457.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24458.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24459.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24460.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24461.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24462.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA24463.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA65470.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA66791.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA71908.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA71915.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA71916.stl",
+        "part": "hand-phalanges"
+      },
+      {
+        "file": "FMA16586.stl",
+        "part": "hip-bone"
+      },
+      {
+        "file": "FMA16587.stl",
+        "part": "hip-bone"
+      },
+      {
+        "file": "FMA24474.stl",
+        "part": "femur"
+      },
+      {
+        "file": "FMA24475.stl",
+        "part": "femur"
+      },
+      {
+        "file": "FMA24486.stl",
+        "part": "patella"
+      },
+      {
+        "file": "FMA24487.stl",
+        "part": "patella"
+      },
+      {
+        "file": "FMA24477.stl",
+        "part": "tibia"
+      },
+      {
+        "file": "FMA24478.stl",
+        "part": "tibia"
+      },
+      {
+        "file": "FMA24480.stl",
+        "part": "fibula"
+      },
+      {
+        "file": "FMA24481.stl",
+        "part": "fibula"
+      },
+      {
+        "file": "FMA24482.stl",
+        "part": "talus"
+      },
+      {
+        "file": "FMA24483.stl",
+        "part": "talus"
+      },
+      {
+        "file": "FMA24497.stl",
+        "part": "calcaneus"
+      },
+      {
+        "file": "FMA24498.stl",
+        "part": "calcaneus"
+      },
+      {
+        "file": "FMA24500.stl",
+        "part": "tarsal-bones"
+      },
+      {
+        "file": "FMA24501.stl",
+        "part": "tarsal-bones"
+      },
+      {
+        "file": "FMA24521.stl",
+        "part": "tarsal-bones"
+      },
+      {
+        "file": "FMA24522.stl",
+        "part": "tarsal-bones"
+      },
+      {
+        "file": "FMA24523.stl",
+        "part": "tarsal-bones"
+      },
+      {
+        "file": "FMA24524.stl",
+        "part": "tarsal-bones"
+      },
+      {
+        "file": "FMA24525.stl",
+        "part": "tarsal-bones"
+      },
+      {
+        "file": "FMA24526.stl",
+        "part": "tarsal-bones"
+      },
+      {
+        "file": "FMA24528.stl",
+        "part": "tarsal-bones"
+      },
+      {
+        "file": "FMA24529.stl",
+        "part": "tarsal-bones"
+      },
+      {
+        "file": "FMA24507.stl",
+        "part": "metatarsals"
+      },
+      {
+        "file": "FMA24508.stl",
+        "part": "metatarsals"
+      },
+      {
+        "file": "FMA24509.stl",
+        "part": "metatarsals"
+      },
+      {
+        "file": "FMA24510.stl",
+        "part": "metatarsals"
+      },
+      {
+        "file": "FMA24511.stl",
+        "part": "metatarsals"
+      },
+      {
+        "file": "FMA24512.stl",
+        "part": "metatarsals"
+      },
+      {
+        "file": "FMA24513.stl",
+        "part": "metatarsals"
+      },
+      {
+        "file": "FMA24514.stl",
+        "part": "metatarsals"
+      },
+      {
+        "file": "FMA24515.stl",
+        "part": "metatarsals"
+      },
+      {
+        "file": "FMA24516.stl",
+        "part": "metatarsals"
+      },
+      {
+        "file": "FMA32634.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32635.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32636.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32637.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32638.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32639.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32642.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32643.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32644.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32645.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32646.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32647.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32652.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32653.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32654.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32655.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32656.stl",
+        "part": "foot-phalanges"
+      },
+      {
+        "file": "FMA32657.stl",
+        "part": "foot-phalanges"
+      }
+    ]
+  },
+  "camera": {
+    "theta": 0.5,
+    "phi": 1.35,
+    "zoom": 0.9
+  },
+  "layers": [
+    {
+      "id": "skull",
+      "name": "Skull",
+      "color": "#e8e0cf"
+    },
+    {
+      "id": "spine",
+      "name": "Spine",
+      "color": "#e8e0cf"
+    },
+    {
+      "id": "thorax",
+      "name": "Thorax",
+      "color": "#e8e0cf"
+    },
+    {
+      "id": "upper-limb",
+      "name": "Upper limb",
+      "color": "#e8e0cf"
+    },
+    {
+      "id": "lower-limb",
+      "name": "Lower limb",
+      "color": "#e8e0cf"
+    }
+  ],
+  "parts": {
+    "frontal-bone": {
+      "name": "Frontal bone",
+      "layer": "skull"
+    },
+    "parietal-bone": {
+      "name": "Parietal bone",
+      "layer": "skull"
+    },
+    "temporal-bone": {
+      "name": "Temporal bone",
+      "layer": "skull"
+    },
+    "occipital-bone": {
+      "name": "Occipital bone",
+      "layer": "skull"
+    },
+    "sphenoid": {
+      "name": "Sphenoid bone",
+      "layer": "skull"
+    },
+    "ethmoid": {
+      "name": "Ethmoid bone",
+      "layer": "skull"
+    },
+    "zygomatic-bone": {
+      "name": "Zygomatic bone (cheekbone)",
+      "layer": "skull"
+    },
+    "maxilla": {
+      "name": "Maxilla",
+      "layer": "skull"
+    },
+    "nasal-bone": {
+      "name": "Nasal bone",
+      "layer": "skull"
+    },
+    "vomer": {
+      "name": "Vomer",
+      "layer": "skull"
+    },
+    "mandible": {
+      "name": "Mandible (jawbone)",
+      "layer": "skull"
+    },
+    "hyoid": {
+      "name": "Hyoid bone",
+      "layer": "skull"
+    },
+    "atlas": {
+      "name": "Atlas (C1)",
+      "layer": "spine"
+    },
+    "axis": {
+      "name": "Axis (C2)",
+      "layer": "spine"
+    },
+    "cervical-vertebrae": {
+      "name": "Cervical vertebrae (C3–C7)",
+      "layer": "spine"
+    },
+    "thoracic-vertebrae": {
+      "name": "Thoracic vertebrae (T1–T12)",
+      "layer": "spine"
+    },
+    "lumbar-vertebrae": {
+      "name": "Lumbar vertebrae (L1–L5)",
+      "layer": "spine"
+    },
+    "sacrum": {
+      "name": "Sacrum",
+      "layer": "spine"
+    },
+    "manubrium": {
+      "name": "Manubrium of sternum",
+      "layer": "thorax"
+    },
+    "sternum-body": {
+      "name": "Body of sternum",
+      "layer": "thorax"
+    },
+    "xiphoid": {
+      "name": "Xiphoid process",
+      "layer": "thorax"
+    },
+    "rib": {
+      "name": "Rib",
+      "layer": "thorax"
+    },
+    "costal-cartilage": {
+      "name": "Costal cartilage",
+      "layer": "thorax",
+      "color": "#cfd8dc"
+    },
+    "clavicle": {
+      "name": "Clavicle (collarbone)",
+      "layer": "upper-limb"
+    },
+    "scapula": {
+      "name": "Scapula (shoulder blade)",
+      "layer": "upper-limb"
+    },
+    "humerus": {
+      "name": "Humerus",
+      "layer": "upper-limb"
+    },
+    "radius": {
+      "name": "Radius",
+      "layer": "upper-limb"
+    },
+    "ulna": {
+      "name": "Ulna",
+      "layer": "upper-limb"
+    },
+    "carpal-bones": {
+      "name": "Carpal bones (wrist)",
+      "layer": "upper-limb"
+    },
+    "metacarpals": {
+      "name": "Metacarpal bones",
+      "layer": "upper-limb"
+    },
+    "hand-phalanges": {
+      "name": "Phalanges of the hand",
+      "layer": "upper-limb"
+    },
+    "hip-bone": {
+      "name": "Hip bone (pelvis)",
+      "layer": "lower-limb"
+    },
+    "femur": {
+      "name": "Femur",
+      "layer": "lower-limb"
+    },
+    "patella": {
+      "name": "Patella (kneecap)",
+      "layer": "lower-limb"
+    },
+    "tibia": {
+      "name": "Tibia (shinbone)",
+      "layer": "lower-limb"
+    },
+    "fibula": {
+      "name": "Fibula",
+      "layer": "lower-limb"
+    },
+    "talus": {
+      "name": "Talus",
+      "layer": "lower-limb"
+    },
+    "calcaneus": {
+      "name": "Calcaneus (heel bone)",
+      "layer": "lower-limb"
+    },
+    "tarsal-bones": {
+      "name": "Tarsal bones (navicular, cuboid, cuneiforms)",
+      "layer": "lower-limb"
+    },
+    "metatarsals": {
+      "name": "Metatarsal bones",
+      "layer": "lower-limb"
+    },
+    "foot-phalanges": {
+      "name": "Phalanges of the foot",
+      "layer": "lower-limb"
+    }
+  },
+  "quizzes": [
+    {
+      "id": "major",
+      "title": "Major bones",
+      "subtitle": "The ones everyone should know",
+      "parts": [
+        "mandible",
+        "clavicle",
+        "scapula",
+        "sternum-body",
+        "rib",
+        "humerus",
+        "radius",
+        "ulna",
+        "cervical-vertebrae",
+        "thoracic-vertebrae",
+        "lumbar-vertebrae",
+        "sacrum",
+        "hip-bone",
+        "femur",
+        "patella",
+        "tibia",
+        "fibula",
+        "calcaneus"
+      ]
+    },
+    {
+      "id": "skull",
+      "title": "Skull",
+      "subtitle": "Cranial and facial bones",
+      "parts": {
+        "layer": "skull"
+      }
+    },
+    {
+      "id": "spine-thorax",
+      "title": "Spine & thorax",
+      "subtitle": "Vertebrae, ribs and sternum",
+      "parts": [
+        "atlas",
+        "axis",
+        "cervical-vertebrae",
+        "thoracic-vertebrae",
+        "lumbar-vertebrae",
+        "sacrum",
+        "manubrium",
+        "sternum-body",
+        "xiphoid",
+        "rib",
+        "costal-cartilage"
+      ]
+    },
+    {
+      "id": "limbs",
+      "title": "Limbs",
+      "subtitle": "Arms, legs, hands and feet",
+      "parts": [
+        "clavicle",
+        "scapula",
+        "humerus",
+        "radius",
+        "ulna",
+        "carpal-bones",
+        "metacarpals",
+        "hand-phalanges",
+        "hip-bone",
+        "femur",
+        "patella",
+        "tibia",
+        "fibula",
+        "talus",
+        "calcaneus",
+        "tarsal-bones",
+        "metatarsals",
+        "foot-phalanges"
+      ]
+    },
+    {
+      "id": "all",
+      "title": "Everything",
+      "subtitle": "The complete skeleton",
+      "parts": "all"
+    }
+  ]
+}

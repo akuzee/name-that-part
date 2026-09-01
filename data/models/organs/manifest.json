@@ -1,0 +1,734 @@
+{
+  "id": "organs",
+  "title": "Torso Organs",
+  "blurb": "Heart, lungs, digestive tract, kidneys and the great vessels — inside a ghosted rib cage.",
+  "attribution": "BodyParts3D, © The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan (via github.com/Kevin-Mattheus-Moerman/BodyParts3D).",
+  "license": "CC BY-SA 2.1 JP",
+  "source": {
+    "kind": "stl-set",
+    "dir": "../../bp3d/",
+    "rotate": [
+      -1.5707963,
+      0,
+      0
+    ],
+    "files": [
+      {
+        "file": "FMA7274.stl",
+        "part": "heart"
+      },
+      {
+        "file": "FMA13295.stl",
+        "part": "diaphragm"
+      },
+      {
+        "file": "FMA71194.stl",
+        "part": "thymus"
+      },
+      {
+        "file": "FMA71195.stl",
+        "part": "thymus"
+      },
+      {
+        "file": "FMA7383.stl",
+        "part": "lung"
+      },
+      {
+        "file": "FMA7333.stl",
+        "part": "lung"
+      },
+      {
+        "file": "FMA7337.stl",
+        "part": "lung"
+      },
+      {
+        "file": "FMA7370.stl",
+        "part": "lung"
+      },
+      {
+        "file": "FMA7371.stl",
+        "part": "lung"
+      },
+      {
+        "file": "FMA7394.stl",
+        "part": "trachea"
+      },
+      {
+        "file": "FMA7409.stl",
+        "part": "bronchus"
+      },
+      {
+        "file": "FMA55099.stl",
+        "part": "thyroid-cartilage"
+      },
+      {
+        "file": "FMA7131.stl",
+        "part": "esophagus"
+      },
+      {
+        "file": "FMA7148.stl",
+        "part": "stomach"
+      },
+      {
+        "file": "FMA7206.stl",
+        "part": "duodenum"
+      },
+      {
+        "file": "FMA7207.stl",
+        "part": "small-intestine"
+      },
+      {
+        "file": "FMA7208.stl",
+        "part": "small-intestine"
+      },
+      {
+        "file": "FMA14543nsn.stl",
+        "part": "colon"
+      },
+      {
+        "file": "FMA14542.stl",
+        "part": "appendix"
+      },
+      {
+        "file": "FMA14544.stl",
+        "part": "rectum"
+      },
+      {
+        "file": "FMA7197.stl",
+        "part": "liver"
+      },
+      {
+        "file": "FMA7202.stl",
+        "part": "gallbladder"
+      },
+      {
+        "file": "FMA7198nsn.stl",
+        "part": "pancreas"
+      },
+      {
+        "file": "FMA7196.stl",
+        "part": "spleen"
+      },
+      {
+        "file": "FMA7204.stl",
+        "part": "kidney"
+      },
+      {
+        "file": "FMA7205.stl",
+        "part": "kidney"
+      },
+      {
+        "file": "FMA15629.stl",
+        "part": "adrenal-gland"
+      },
+      {
+        "file": "FMA15630.stl",
+        "part": "adrenal-gland"
+      },
+      {
+        "file": "FMA15571.stl",
+        "part": "ureter"
+      },
+      {
+        "file": "FMA15572.stl",
+        "part": "ureter"
+      },
+      {
+        "file": "FMA15900.stl",
+        "part": "bladder"
+      },
+      {
+        "file": "FMA19667.stl",
+        "part": "urethra"
+      },
+      {
+        "file": "FMA9600.stl",
+        "part": "prostate"
+      },
+      {
+        "file": "FMA3736.stl",
+        "part": "aorta"
+      },
+      {
+        "file": "FMA3768.stl",
+        "part": "aorta"
+      },
+      {
+        "file": "FMA3784.stl",
+        "part": "aorta"
+      },
+      {
+        "file": "FMA4720.stl",
+        "part": "superior-vena-cava"
+      },
+      {
+        "file": "FMA10951.stl",
+        "part": "inferior-vena-cava"
+      },
+      {
+        "file": "FMA66326.stl",
+        "part": "pulmonary-artery"
+      },
+      {
+        "file": "FMA66643.stl",
+        "part": "pulmonary-vein"
+      },
+      {
+        "file": "FMA3941.stl",
+        "part": "carotid-artery"
+      },
+      {
+        "file": "FMA4058.stl",
+        "part": "carotid-artery"
+      },
+      {
+        "file": "FMA4754.stl",
+        "part": "jugular-vein"
+      },
+      {
+        "file": "FMA4762.stl",
+        "part": "jugular-vein"
+      },
+      {
+        "file": "FMA3953.stl",
+        "part": "subclavian-artery"
+      },
+      {
+        "file": "FMA4694.stl",
+        "part": "subclavian-artery"
+      },
+      {
+        "file": "FMA14752.stl",
+        "part": "renal-artery"
+      },
+      {
+        "file": "FMA14753.stl",
+        "part": "renal-artery"
+      },
+      {
+        "file": "FMA14765.stl",
+        "part": "iliac-artery"
+      },
+      {
+        "file": "FMA14766.stl",
+        "part": "iliac-artery"
+      },
+      {
+        "file": "FMA7486.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA7487.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA7488.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA7857.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA7875.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA7882.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA7886.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA7909.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA7913.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA7957.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA7976.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA7987.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8005.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8012.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8031.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8039.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8058.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8066.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8070.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8093.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8112.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8148.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8167.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8175.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8194.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8202.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8221.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8229.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8248.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8256.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8275.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8283.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8310.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8364.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8391.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8445.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8472.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8531.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8532.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8533.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA8534.stl",
+        "part": "ctx-ribcage"
+      },
+      {
+        "file": "FMA16202.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA10014.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA10037.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA10059.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA10081.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA13072.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA13073.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA13074.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA13075.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA13076.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA9165.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA9187.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA9209.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA9248.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA9922.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA9945.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA9968.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA9991.stl",
+        "part": "ctx-spine"
+      },
+      {
+        "file": "FMA16586.stl",
+        "part": "ctx-pelvis"
+      },
+      {
+        "file": "FMA16587.stl",
+        "part": "ctx-pelvis"
+      }
+    ]
+  },
+  "camera": {
+    "theta": 0.35,
+    "phi": 1.35,
+    "zoom": 0.8
+  },
+  "layers": [
+    {
+      "id": "respiratory",
+      "name": "Respiratory",
+      "color": "#e8b4b0"
+    },
+    {
+      "id": "digestive",
+      "name": "Digestive",
+      "color": "#d9a066"
+    },
+    {
+      "id": "urinary",
+      "name": "Urinary & endocrine",
+      "color": "#b05f4f"
+    },
+    {
+      "id": "vessels",
+      "name": "Great vessels",
+      "color": "#b04040"
+    },
+    {
+      "id": "other",
+      "name": "Heart & other",
+      "color": "#c25450"
+    },
+    {
+      "id": "context",
+      "name": "Skeleton (context)",
+      "color": "#e8e0cf",
+      "ghost": true
+    }
+  ],
+  "parts": {
+    "heart": {
+      "name": "Heart",
+      "layer": "other",
+      "color": "#b8433f"
+    },
+    "diaphragm": {
+      "name": "Diaphragm",
+      "layer": "other",
+      "color": "#c98a7c"
+    },
+    "thymus": {
+      "name": "Thymus",
+      "layer": "other",
+      "color": "#d8a89a"
+    },
+    "lung": {
+      "name": "Lung",
+      "layer": "respiratory",
+      "color": "#e0a8a4"
+    },
+    "trachea": {
+      "name": "Trachea (windpipe)",
+      "layer": "respiratory",
+      "color": "#e5d5c5"
+    },
+    "bronchus": {
+      "name": "Bronchus",
+      "layer": "respiratory",
+      "color": "#dcc8b8"
+    },
+    "thyroid-cartilage": {
+      "name": "Thyroid cartilage",
+      "layer": "respiratory",
+      "color": "#e5d5c5"
+    },
+    "esophagus": {
+      "name": "Esophagus",
+      "layer": "digestive",
+      "color": "#cf9670"
+    },
+    "stomach": {
+      "name": "Stomach",
+      "layer": "digestive",
+      "color": "#d9a066"
+    },
+    "duodenum": {
+      "name": "Duodenum",
+      "layer": "digestive",
+      "color": "#cf8f5c"
+    },
+    "small-intestine": {
+      "name": "Small intestine (jejunum & ileum)",
+      "layer": "digestive",
+      "color": "#daa878"
+    },
+    "colon": {
+      "name": "Colon (large intestine)",
+      "layer": "digestive",
+      "color": "#c08850"
+    },
+    "appendix": {
+      "name": "Appendix",
+      "layer": "digestive",
+      "color": "#b87f48"
+    },
+    "rectum": {
+      "name": "Rectum",
+      "layer": "digestive",
+      "color": "#b87f48"
+    },
+    "liver": {
+      "name": "Liver",
+      "layer": "digestive",
+      "color": "#8f3f2f"
+    },
+    "gallbladder": {
+      "name": "Gallbladder",
+      "layer": "digestive",
+      "color": "#6d8f3f"
+    },
+    "pancreas": {
+      "name": "Pancreas",
+      "layer": "digestive",
+      "color": "#e0c088"
+    },
+    "spleen": {
+      "name": "Spleen",
+      "layer": "urinary",
+      "color": "#7d3548"
+    },
+    "kidney": {
+      "name": "Kidney",
+      "layer": "urinary",
+      "color": "#94473a"
+    },
+    "adrenal-gland": {
+      "name": "Adrenal gland",
+      "layer": "urinary",
+      "color": "#d8b060"
+    },
+    "ureter": {
+      "name": "Ureter",
+      "layer": "urinary",
+      "color": "#d8c880"
+    },
+    "bladder": {
+      "name": "Urinary bladder",
+      "layer": "urinary",
+      "color": "#d8c060"
+    },
+    "urethra": {
+      "name": "Urethra",
+      "layer": "urinary",
+      "color": "#d0b858"
+    },
+    "prostate": {
+      "name": "Prostate",
+      "layer": "urinary",
+      "color": "#c0a0a8"
+    },
+    "aorta": {
+      "name": "Aorta",
+      "layer": "vessels",
+      "color": "#c03838"
+    },
+    "superior-vena-cava": {
+      "name": "Superior vena cava",
+      "layer": "vessels",
+      "color": "#3858b0"
+    },
+    "inferior-vena-cava": {
+      "name": "Inferior vena cava",
+      "layer": "vessels",
+      "color": "#3858b0"
+    },
+    "pulmonary-artery": {
+      "name": "Pulmonary artery",
+      "layer": "vessels",
+      "color": "#5068c0"
+    },
+    "pulmonary-vein": {
+      "name": "Pulmonary vein",
+      "layer": "vessels",
+      "color": "#c05858"
+    },
+    "carotid-artery": {
+      "name": "Common carotid artery",
+      "layer": "vessels",
+      "color": "#c03838"
+    },
+    "jugular-vein": {
+      "name": "Internal jugular vein",
+      "layer": "vessels",
+      "color": "#3858b0"
+    },
+    "subclavian-artery": {
+      "name": "Subclavian artery",
+      "layer": "vessels",
+      "color": "#c03838"
+    },
+    "renal-artery": {
+      "name": "Renal artery",
+      "layer": "vessels",
+      "color": "#c03838"
+    },
+    "iliac-artery": {
+      "name": "Common iliac artery",
+      "layer": "vessels",
+      "color": "#c03838"
+    },
+    "ctx-ribcage": {
+      "name": "Rib cage",
+      "layer": "context",
+      "quiz": false
+    },
+    "ctx-spine": {
+      "name": "Spine",
+      "layer": "context",
+      "quiz": false
+    },
+    "ctx-pelvis": {
+      "name": "Pelvis",
+      "layer": "context",
+      "quiz": false
+    }
+  },
+  "quizzes": [
+    {
+      "id": "thoracic",
+      "title": "Chest",
+      "subtitle": "Heart, lungs and airway",
+      "parts": [
+        "heart",
+        "lung",
+        "trachea",
+        "bronchus",
+        "esophagus",
+        "diaphragm",
+        "thymus",
+        "thyroid-cartilage"
+      ]
+    },
+    {
+      "id": "digestive",
+      "title": "Digestive system",
+      "subtitle": "Mouth to rectum",
+      "parts": {
+        "layer": "digestive"
+      }
+    },
+    {
+      "id": "urinary",
+      "title": "Urinary & glands",
+      "subtitle": "Kidneys, bladder and friends",
+      "parts": {
+        "layer": "urinary"
+      }
+    },
+    {
+      "id": "vessels",
+      "title": "Great vessels",
+      "subtitle": "Arteries and veins",
+      "parts": {
+        "layer": "vessels"
+      }
+    },
+    {
+      "id": "all",
+      "title": "Everything",
+      "subtitle": "All organs and vessels",
+      "parts": "all"
+    }
+  ]
+}

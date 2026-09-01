@@ -1,0 +1,46 @@
+{
+  "models": [
+    {
+      "id": "skeleton",
+      "title": "Human Skeleton",
+      "blurb": "Every bone, from the BodyParts3D anatomical database.",
+      "badge": "BodyParts3D · CC BY-SA"
+    },
+    {
+      "id": "organs",
+      "title": "Torso Organs",
+      "blurb": "Heart, lungs, GI tract, kidneys and great vessels in a ghosted rib cage.",
+      "badge": "BodyParts3D · CC BY-SA"
+    },
+    {
+      "id": "heart",
+      "title": "Heart",
+      "blurb": "Valves, papillary muscles and coronary vessels — see-through to look inside.",
+      "badge": "BodyParts3D · CC BY-SA"
+    },
+    {
+      "id": "brain",
+      "title": "Brain",
+      "blurb": "Gyri, deep structures, ventricles, brainstem and cerebellum.",
+      "badge": "BodyParts3D · CC BY-SA"
+    },
+    {
+      "id": "muscles",
+      "title": "Major Muscles",
+      "blurb": "Gym muscles to rotator cuff, over a ghosted skeleton.",
+      "badge": "BodyParts3D · CC BY-SA"
+    },
+    {
+      "id": "house",
+      "title": "House: Framing & Systems",
+      "blurb": "Every stud, joist, duct and drain in a stick-framed house.",
+      "badge": "Procedural"
+    },
+    {
+      "id": "engine-i4",
+      "title": "Inline-4 Engine",
+      "blurb": "Block, crank, pistons, valvetrain, intake and exhaust.",
+      "badge": "Procedural"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "id": "heart",
+  "title": "Heart",
+  "blurb": "The heart wall with its valves, papillary muscles, coronary vessels and great vessels — use see-through to look inside.",
+  "attribution": "BodyParts3D, © The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan (via github.com/Kevin-Mattheus-Moerman/BodyParts3D).",
+  "license": "CC BY-SA 2.1 JP",
+  "source": {
+    "kind": "stl-set",
+    "dir": "../../bp3d/",
+    "rotate": [
+      -1.5707963,
+      0,
+      0
+    ],
+    "files": [
+      {
+        "file": "FMA7274.stl",
+        "part": "heart-wall"
+      },
+      {
+        "file": "FMA7234.stl",
+        "part": "tricuspid-valve"
+      },
+      {
+        "file": "FMA7235.stl",
+        "part": "mitral-valve"
+      },
+      {
+        "file": "FMA7246.stl",
+        "part": "pulmonary-valve"
+      },
+      {
+        "file": "FMA7260.stl",
+        "part": "papillary-muscles"
+      },
+      {
+        "file": "FMA7261.stl",
+        "part": "papillary-muscles"
+      },
+      {
+        "file": "FMA7262.stl",
+        "part": "papillary-muscles"
+      },
+      {
+        "file": "FMA7266.stl",
+        "part": "papillary-muscles"
+      },
+      {
+        "file": "FMA9352nsn.stl",
+        "part": "papillary-muscles"
+      },
+      {
+        "file": "FMA71670.stl",
+        "part": "left-coronary-artery"
+      },
+      {
+        "file": "FMA3895.stl",
+        "part": "left-coronary-artery"
+      },
+      {
+        "file": "FMA3862nsn.stl",
+        "part": "left-coronary-artery"
+      },
+      {
+        "file": "FMA4685.stl",
+        "part": "left-coronary-artery"
+      },
+      {
+        "file": "FMA3818.stl",
+        "part": "right-coronary-artery"
+      },
+      {
+        "file": "FMA71669.stl",
+        "part": "right-coronary-artery"
+      },
+      {
+        "file": "FMA76994.stl",
+        "part": "right-coronary-artery"
+      },
+      {
+        "file": "FMA3802.stl",
+        "part": "right-coronary-artery"
+      },
+      {
+        "file": "FMA3840nsn.stl",
+        "part": "right-coronary-artery"
+      },
+      {
+        "file": "FMA4707.stl",
+        "part": "cardiac-veins"
+      },
+      {
+        "file": "FMA76751.stl",
+        "part": "cardiac-veins"
+      },
+      {
+        "file": "FMA4713.stl",
+        "part": "cardiac-veins"
+      },
+      {
+        "file": "FMA71567.stl",
+        "part": "cardiac-veins"
+      },
+      {
+        "file": "FMA3736.stl",
+        "part": "ascending-aorta"
+      },
+      {
+        "file": "FMA3768.stl",
+        "part": "aortic-arch"
+      },
+      {
+        "file": "FMA66326.stl",
+        "part": "pulmonary-artery"
+      },
+      {
+        "file": "FMA66643.stl",
+        "part": "pulmonary-vein"
+      },
+      {
+        "file": "FMA4720.stl",
+        "part": "superior-vena-cava"
+      },
+      {
+        "file": "FMA10951.stl",
+        "part": "inferior-vena-cava"
+      }
+    ]
+  },
+  "camera": {
+    "theta": 0.5,
+    "phi": 1.3,
+    "zoom": 1
+  },
+  "layers": [
+    {
+      "id": "wall",
+      "name": "Heart wall",
+      "color": "#b8433f"
+    },
+    {
+      "id": "valves",
+      "name": "Valves & papillary muscles",
+      "color": "#e8d8c0"
+    },
+    {
+      "id": "coronary",
+      "name": "Coronary vessels",
+      "color": "#c03838"
+    },
+    {
+      "id": "great",
+      "name": "Great vessels",
+      "color": "#a04848"
+    }
+  ],
+  "parts": {
+    "heart-wall": {
+      "name": "Heart wall (myocardium)",
+      "layer": "wall",
+      "color": "#b8433f"
+    },
+    "tricuspid-valve": {
+      "name": "Tricuspid valve",
+      "layer": "valves",
+      "color": "#e8d8c0"
+    },
+    "mitral-valve": {
+      "name": "Mitral valve",
+      "layer": "valves",
+      "color": "#e8d0b0"
+    },
+    "pulmonary-valve": {
+      "name": "Pulmonary valve",
+      "layer": "valves",
+      "color": "#e0c8a8"
+    },
+    "papillary-muscles": {
+      "name": "Papillary muscles",
+      "layer": "valves",
+      "color": "#a03830"
+    },
+    "left-coronary-artery": {
+      "name": "Left coronary artery (LAD & circumflex)",
+      "layer": "coronary",
+      "color": "#d84838"
+    },
+    "right-coronary-artery": {
+      "name": "Right coronary artery",
+      "layer": "coronary",
+      "color": "#e05848"
+    },
+    "cardiac-veins": {
+      "name": "Cardiac veins",
+      "layer": "coronary",
+      "color": "#4858b8"
+    },
+    "ascending-aorta": {
+      "name": "Ascending aorta",
+      "layer": "great",
+      "color": "#c03838"
+    },
+    "aortic-arch": {
+      "name": "Arch of aorta",
+      "layer": "great",
+      "color": "#c03838"
+    },
+    "pulmonary-artery": {
+      "name": "Pulmonary artery",
+      "layer": "great",
+      "color": "#5068c0"
+    },
+    "pulmonary-vein": {
+      "name": "Pulmonary vein",
+      "layer": "great",
+      "color": "#c05858"
+    },
+    "superior-vena-cava": {
+      "name": "Superior vena cava",
+      "layer": "great",
+      "color": "#3858b0"
+    },
+    "inferior-vena-cava": {
+      "name": "Inferior vena cava",
+      "layer": "great",
+      "color": "#3858b0"
+    }
+  },
+  "quizzes": [
+    {
+      "id": "inside",
+      "title": "Inside the heart",
+      "subtitle": "Valves and papillary muscles (turn up see-through!)",
+      "parts": [
+        "heart-wall",
+        "tricuspid-valve",
+        "mitral-valve",
+        "pulmonary-valve",
+        "papillary-muscles"
+      ]
+    },
+    {
+      "id": "vessels",
+      "title": "Vessels",
+      "subtitle": "Coronary and great vessels",
+      "parts": [
+        "left-coronary-artery",
+        "right-coronary-artery",
+        "cardiac-veins",
+        "ascending-aorta",
+        "aortic-arch",
+        "pulmonary-artery",
+        "pulmonary-vein",
+        "superior-vena-cava",
+        "inferior-vena-cava"
+      ]
+    },
+    {
+      "id": "all",
+      "title": "Everything",
+      "subtitle": "The complete heart",
+      "parts": "all"
+    }
+  ]
+}

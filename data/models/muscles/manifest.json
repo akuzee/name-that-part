@@ -1,0 +1,1268 @@
+{
+  "id": "muscles",
+  "title": "Major Muscles",
+  "blurb": "The muscles you name at the gym and in anatomy class, over a ghosted skeleton.",
+  "attribution": "BodyParts3D, © The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan (via github.com/Kevin-Mattheus-Moerman/BodyParts3D).",
+  "license": "CC BY-SA 2.1 JP",
+  "source": {
+    "kind": "stl-set",
+    "dir": "../../bp3d/",
+    "rotate": [
+      -1.5707963,
+      0,
+      0
+    ],
+    "files": [
+      {
+        "file": "FMA49001.stl",
+        "part": "masseter"
+      },
+      {
+        "file": "FMA49002.stl",
+        "part": "masseter"
+      },
+      {
+        "file": "FMA49004.stl",
+        "part": "masseter"
+      },
+      {
+        "file": "FMA49005.stl",
+        "part": "masseter"
+      },
+      {
+        "file": "FMA13408.stl",
+        "part": "sternocleidomastoid"
+      },
+      {
+        "file": "FMA13409.stl",
+        "part": "sternocleidomastoid"
+      },
+      {
+        "file": "FMA22728.stl",
+        "part": "splenius-capitis"
+      },
+      {
+        "file": "FMA22729.stl",
+        "part": "splenius-capitis"
+      },
+      {
+        "file": "FMA33581.stl",
+        "part": "trapezius"
+      },
+      {
+        "file": "FMA33583.stl",
+        "part": "trapezius"
+      },
+      {
+        "file": "FMA33584.stl",
+        "part": "trapezius"
+      },
+      {
+        "file": "FMA33585.stl",
+        "part": "trapezius"
+      },
+      {
+        "file": "FMA33586.stl",
+        "part": "trapezius"
+      },
+      {
+        "file": "FMA33587.stl",
+        "part": "trapezius"
+      },
+      {
+        "file": "FMA13358.stl",
+        "part": "latissimus-dorsi"
+      },
+      {
+        "file": "FMA13359.stl",
+        "part": "latissimus-dorsi"
+      },
+      {
+        "file": "FMA13381.stl",
+        "part": "rhomboid-major"
+      },
+      {
+        "file": "FMA13382.stl",
+        "part": "rhomboid-major"
+      },
+      {
+        "file": "FMA13383.stl",
+        "part": "rhomboid-minor"
+      },
+      {
+        "file": "FMA13384.stl",
+        "part": "rhomboid-minor"
+      },
+      {
+        "file": "FMA32540.stl",
+        "part": "levator-scapulae"
+      },
+      {
+        "file": "FMA32541.stl",
+        "part": "levator-scapulae"
+      },
+      {
+        "file": "FMA22740.stl",
+        "part": "erector-spinae"
+      },
+      {
+        "file": "FMA22741.stl",
+        "part": "erector-spinae"
+      },
+      {
+        "file": "FMA22742.stl",
+        "part": "erector-spinae"
+      },
+      {
+        "file": "FMA22743.stl",
+        "part": "erector-spinae"
+      },
+      {
+        "file": "FMA22744.stl",
+        "part": "erector-spinae"
+      },
+      {
+        "file": "FMA22745.stl",
+        "part": "erector-spinae"
+      },
+      {
+        "file": "FMA22348.stl",
+        "part": "quadratus-lumborum"
+      },
+      {
+        "file": "FMA22349.stl",
+        "part": "quadratus-lumborum"
+      },
+      {
+        "file": "FMA34680.stl",
+        "part": "deltoid"
+      },
+      {
+        "file": "FMA34681.stl",
+        "part": "deltoid"
+      },
+      {
+        "file": "FMA34682.stl",
+        "part": "deltoid"
+      },
+      {
+        "file": "FMA34683.stl",
+        "part": "deltoid"
+      },
+      {
+        "file": "FMA32544.stl",
+        "part": "supraspinatus"
+      },
+      {
+        "file": "FMA32545.stl",
+        "part": "supraspinatus"
+      },
+      {
+        "file": "FMA32547.stl",
+        "part": "infraspinatus"
+      },
+      {
+        "file": "FMA32548.stl",
+        "part": "infraspinatus"
+      },
+      {
+        "file": "FMA32551.stl",
+        "part": "teres-major"
+      },
+      {
+        "file": "FMA32552.stl",
+        "part": "teres-major"
+      },
+      {
+        "file": "FMA32553.stl",
+        "part": "teres-minor"
+      },
+      {
+        "file": "FMA32554.stl",
+        "part": "teres-minor"
+      },
+      {
+        "file": "FMA13414.stl",
+        "part": "subscapularis"
+      },
+      {
+        "file": "FMA13415.stl",
+        "part": "subscapularis"
+      },
+      {
+        "file": "FMA13398.stl",
+        "part": "serratus-anterior"
+      },
+      {
+        "file": "FMA13399.stl",
+        "part": "serratus-anterior"
+      },
+      {
+        "file": "FMA34690.stl",
+        "part": "pectoralis-major"
+      },
+      {
+        "file": "FMA34691.stl",
+        "part": "pectoralis-major"
+      },
+      {
+        "file": "FMA45874.stl",
+        "part": "pectoralis-major"
+      },
+      {
+        "file": "FMA45875.stl",
+        "part": "pectoralis-major"
+      },
+      {
+        "file": "FMA79979.stl",
+        "part": "pectoralis-major"
+      },
+      {
+        "file": "FMA79980.stl",
+        "part": "pectoralis-major"
+      },
+      {
+        "file": "FMA13375.stl",
+        "part": "pectoralis-minor"
+      },
+      {
+        "file": "FMA13376.stl",
+        "part": "pectoralis-minor"
+      },
+      {
+        "file": "FMA37684.stl",
+        "part": "biceps-brachii"
+      },
+      {
+        "file": "FMA37685.stl",
+        "part": "biceps-brachii"
+      },
+      {
+        "file": "FMA37686.stl",
+        "part": "biceps-brachii"
+      },
+      {
+        "file": "FMA37687.stl",
+        "part": "biceps-brachii"
+      },
+      {
+        "file": "FMA37695.stl",
+        "part": "triceps-brachii"
+      },
+      {
+        "file": "FMA37696.stl",
+        "part": "triceps-brachii"
+      },
+      {
+        "file": "FMA37697.stl",
+        "part": "triceps-brachii"
+      },
+      {
+        "file": "FMA37698.stl",
+        "part": "triceps-brachii"
+      },
+      {
+        "file": "FMA37699.stl",
+        "part": "triceps-brachii"
+      },
+      {
+        "file": "FMA37700.stl",
+        "part": "triceps-brachii"
+      },
+      {
+        "file": "FMA37668.stl",
+        "part": "brachialis"
+      },
+      {
+        "file": "FMA37669.stl",
+        "part": "brachialis"
+      },
+      {
+        "file": "FMA38486.stl",
+        "part": "brachioradialis"
+      },
+      {
+        "file": "FMA38487.stl",
+        "part": "brachioradialis"
+      },
+      {
+        "file": "FMA38560.stl",
+        "part": "pronator-teres"
+      },
+      {
+        "file": "FMA38561.stl",
+        "part": "pronator-teres"
+      },
+      {
+        "file": "FMA38562.stl",
+        "part": "pronator-teres"
+      },
+      {
+        "file": "FMA38563.stl",
+        "part": "pronator-teres"
+      },
+      {
+        "file": "FMA38460.stl",
+        "part": "flexor-carpi-radialis"
+      },
+      {
+        "file": "FMA38461.stl",
+        "part": "flexor-carpi-radialis"
+      },
+      {
+        "file": "FMA38617.stl",
+        "part": "flexor-carpi-ulnaris"
+      },
+      {
+        "file": "FMA38618.stl",
+        "part": "flexor-carpi-ulnaris"
+      },
+      {
+        "file": "FMA38619.stl",
+        "part": "flexor-carpi-ulnaris"
+      },
+      {
+        "file": "FMA38620.stl",
+        "part": "flexor-carpi-ulnaris"
+      },
+      {
+        "file": "FMA38501.stl",
+        "part": "extensor-digitorum"
+      },
+      {
+        "file": "FMA38502.stl",
+        "part": "extensor-digitorum"
+      },
+      {
+        "file": "FMA13377.stl",
+        "part": "rectus-abdominis"
+      },
+      {
+        "file": "FMA13378.stl",
+        "part": "rectus-abdominis"
+      },
+      {
+        "file": "FMA13336.stl",
+        "part": "external-oblique"
+      },
+      {
+        "file": "FMA13337.stl",
+        "part": "external-oblique"
+      },
+      {
+        "file": "FMA22328.stl",
+        "part": "gluteus-maximus"
+      },
+      {
+        "file": "FMA22329.stl",
+        "part": "gluteus-maximus"
+      },
+      {
+        "file": "FMA22330.stl",
+        "part": "gluteus-medius"
+      },
+      {
+        "file": "FMA22331.stl",
+        "part": "gluteus-medius"
+      },
+      {
+        "file": "FMA22332.stl",
+        "part": "gluteus-minimus"
+      },
+      {
+        "file": "FMA22333.stl",
+        "part": "gluteus-minimus"
+      },
+      {
+        "file": "FMA22322.stl",
+        "part": "iliacus"
+      },
+      {
+        "file": "FMA22323.stl",
+        "part": "iliacus"
+      },
+      {
+        "file": "FMA22342.stl",
+        "part": "psoas-major"
+      },
+      {
+        "file": "FMA22343.stl",
+        "part": "psoas-major"
+      },
+      {
+        "file": "FMA22450.stl",
+        "part": "pectineus"
+      },
+      {
+        "file": "FMA22451.stl",
+        "part": "pectineus"
+      },
+      {
+        "file": "FMA22456.stl",
+        "part": "adductor-longus"
+      },
+      {
+        "file": "FMA22457.stl",
+        "part": "adductor-longus"
+      },
+      {
+        "file": "FMA22459.stl",
+        "part": "adductor-magnus"
+      },
+      {
+        "file": "FMA22460.stl",
+        "part": "adductor-magnus"
+      },
+      {
+        "file": "FMA43883.stl",
+        "part": "gracilis"
+      },
+      {
+        "file": "FMA43884.stl",
+        "part": "gracilis"
+      },
+      {
+        "file": "FMA22354.stl",
+        "part": "sartorius"
+      },
+      {
+        "file": "FMA22355.stl",
+        "part": "sartorius"
+      },
+      {
+        "file": "FMA22425.stl",
+        "part": "tensor-fasciae-latae"
+      },
+      {
+        "file": "FMA22426.stl",
+        "part": "tensor-fasciae-latae"
+      },
+      {
+        "file": "FMA38928.stl",
+        "part": "rectus-femoris"
+      },
+      {
+        "file": "FMA38929.stl",
+        "part": "rectus-femoris"
+      },
+      {
+        "file": "FMA38930.stl",
+        "part": "vastus-lateralis"
+      },
+      {
+        "file": "FMA38931.stl",
+        "part": "vastus-lateralis"
+      },
+      {
+        "file": "FMA38932.stl",
+        "part": "vastus-medialis"
+      },
+      {
+        "file": "FMA38933.stl",
+        "part": "vastus-medialis"
+      },
+      {
+        "file": "FMA38934.stl",
+        "part": "vastus-intermedius"
+      },
+      {
+        "file": "FMA38935.stl",
+        "part": "vastus-intermedius"
+      },
+      {
+        "file": "FMA45888.stl",
+        "part": "biceps-femoris"
+      },
+      {
+        "file": "FMA45889.stl",
+        "part": "biceps-femoris"
+      },
+      {
+        "file": "FMA45891.stl",
+        "part": "biceps-femoris"
+      },
+      {
+        "file": "FMA45892.stl",
+        "part": "biceps-femoris"
+      },
+      {
+        "file": "FMA22358.stl",
+        "part": "semitendinosus"
+      },
+      {
+        "file": "FMA22359.stl",
+        "part": "semitendinosus"
+      },
+      {
+        "file": "FMA22448.stl",
+        "part": "semimembranosus"
+      },
+      {
+        "file": "FMA22449.stl",
+        "part": "semimembranosus"
+      },
+      {
+        "file": "FMA45957.stl",
+        "part": "gastrocnemius"
+      },
+      {
+        "file": "FMA45958.stl",
+        "part": "gastrocnemius"
+      },
+      {
+        "file": "FMA45960.stl",
+        "part": "gastrocnemius"
+      },
+      {
+        "file": "FMA45961.stl",
+        "part": "gastrocnemius"
+      },
+      {
+        "file": "FMA22558.stl",
+        "part": "soleus"
+      },
+      {
+        "file": "FMA22559.stl",
+        "part": "soleus"
+      },
+      {
+        "file": "FMA22544.stl",
+        "part": "tibialis-anterior"
+      },
+      {
+        "file": "FMA22545.stl",
+        "part": "tibialis-anterior"
+      },
+      {
+        "file": "FMA65018.stl",
+        "part": "tibialis-posterior"
+      },
+      {
+        "file": "FMA65019.stl",
+        "part": "tibialis-posterior"
+      },
+      {
+        "file": "FMA22552.stl",
+        "part": "fibularis-longus"
+      },
+      {
+        "file": "FMA22553.stl",
+        "part": "fibularis-longus"
+      },
+      {
+        "file": "FMA22548.stl",
+        "part": "extensor-digitorum-longus"
+      },
+      {
+        "file": "FMA22549.stl",
+        "part": "extensor-digitorum-longus"
+      },
+      {
+        "file": "FMA52735.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA52734.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA52748.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA12519.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA12520.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA12525.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA16202.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA7486.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA7487.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA7488.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA10014.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA10037.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA10059.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA10081.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA12521.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA12522.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA12523.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA12524.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA13072.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA13073.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA13074.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA13075.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA13076.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA13322.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA13323.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA13395.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA13396.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA16586.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA16587.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA23130.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA23131.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA23464.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA23465.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA23467.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA23468.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24474.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24475.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24477.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24478.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24480.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24481.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24482.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24483.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24486.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24487.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24497.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA24498.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA52738.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA52739.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA52788.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA52789.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA52892.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA52893.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA53647.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA53648.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA53649.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA53650.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA7857.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA7882.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA7909.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA7957.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA7987.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8012.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8039.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8066.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8093.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8148.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8175.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8202.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8229.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8256.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8283.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8310.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8364.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8391.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8445.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8472.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8531.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8532.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8533.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA8534.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA9165.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA9187.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA9209.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA9248.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA9922.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA9945.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA9968.stl",
+        "part": "ctx-skeleton"
+      },
+      {
+        "file": "FMA9991.stl",
+        "part": "ctx-skeleton"
+      }
+    ]
+  },
+  "camera": {
+    "theta": 0.5,
+    "phi": 1.35,
+    "zoom": 0.9
+  },
+  "layers": [
+    {
+      "id": "head-neck",
+      "name": "Head & neck",
+      "color": "#a8544c"
+    },
+    {
+      "id": "back",
+      "name": "Back",
+      "color": "#a8544c"
+    },
+    {
+      "id": "shoulder-chest",
+      "name": "Shoulder & chest",
+      "color": "#a8544c"
+    },
+    {
+      "id": "arm",
+      "name": "Arm & forearm",
+      "color": "#a8544c"
+    },
+    {
+      "id": "abdomen",
+      "name": "Abdomen",
+      "color": "#a8544c"
+    },
+    {
+      "id": "hip-thigh",
+      "name": "Hip & thigh",
+      "color": "#a8544c"
+    },
+    {
+      "id": "leg",
+      "name": "Lower leg",
+      "color": "#a8544c"
+    },
+    {
+      "id": "context",
+      "name": "Skeleton (context)",
+      "color": "#e8e0cf",
+      "ghost": true
+    }
+  ],
+  "parts": {
+    "masseter": {
+      "name": "Masseter",
+      "layer": "head-neck"
+    },
+    "sternocleidomastoid": {
+      "name": "Sternocleidomastoid",
+      "layer": "head-neck"
+    },
+    "splenius-capitis": {
+      "name": "Splenius capitis",
+      "layer": "head-neck"
+    },
+    "trapezius": {
+      "name": "Trapezius",
+      "layer": "back"
+    },
+    "latissimus-dorsi": {
+      "name": "Latissimus dorsi",
+      "layer": "back"
+    },
+    "rhomboid-major": {
+      "name": "Rhomboid major",
+      "layer": "back"
+    },
+    "rhomboid-minor": {
+      "name": "Rhomboid minor",
+      "layer": "back"
+    },
+    "levator-scapulae": {
+      "name": "Levator scapulae",
+      "layer": "back"
+    },
+    "erector-spinae": {
+      "name": "Erector spinae (iliocostalis)",
+      "layer": "back"
+    },
+    "quadratus-lumborum": {
+      "name": "Quadratus lumborum",
+      "layer": "back"
+    },
+    "deltoid": {
+      "name": "Deltoid",
+      "layer": "shoulder-chest"
+    },
+    "supraspinatus": {
+      "name": "Supraspinatus (rotator cuff)",
+      "layer": "shoulder-chest"
+    },
+    "infraspinatus": {
+      "name": "Infraspinatus (rotator cuff)",
+      "layer": "shoulder-chest"
+    },
+    "teres-major": {
+      "name": "Teres major",
+      "layer": "shoulder-chest"
+    },
+    "teres-minor": {
+      "name": "Teres minor (rotator cuff)",
+      "layer": "shoulder-chest"
+    },
+    "subscapularis": {
+      "name": "Subscapularis (rotator cuff)",
+      "layer": "shoulder-chest"
+    },
+    "serratus-anterior": {
+      "name": "Serratus anterior",
+      "layer": "shoulder-chest"
+    },
+    "pectoralis-major": {
+      "name": "Pectoralis major",
+      "layer": "shoulder-chest"
+    },
+    "pectoralis-minor": {
+      "name": "Pectoralis minor",
+      "layer": "shoulder-chest"
+    },
+    "biceps-brachii": {
+      "name": "Biceps brachii",
+      "layer": "arm"
+    },
+    "triceps-brachii": {
+      "name": "Triceps brachii",
+      "layer": "arm"
+    },
+    "brachialis": {
+      "name": "Brachialis",
+      "layer": "arm"
+    },
+    "brachioradialis": {
+      "name": "Brachioradialis",
+      "layer": "arm"
+    },
+    "pronator-teres": {
+      "name": "Pronator teres",
+      "layer": "arm"
+    },
+    "flexor-carpi-radialis": {
+      "name": "Flexor carpi radialis",
+      "layer": "arm"
+    },
+    "flexor-carpi-ulnaris": {
+      "name": "Flexor carpi ulnaris",
+      "layer": "arm"
+    },
+    "extensor-digitorum": {
+      "name": "Extensor digitorum",
+      "layer": "arm"
+    },
+    "rectus-abdominis": {
+      "name": "Rectus abdominis (abs)",
+      "layer": "abdomen"
+    },
+    "external-oblique": {
+      "name": "External oblique",
+      "layer": "abdomen"
+    },
+    "gluteus-maximus": {
+      "name": "Gluteus maximus",
+      "layer": "hip-thigh"
+    },
+    "gluteus-medius": {
+      "name": "Gluteus medius",
+      "layer": "hip-thigh"
+    },
+    "gluteus-minimus": {
+      "name": "Gluteus minimus",
+      "layer": "hip-thigh"
+    },
+    "iliacus": {
+      "name": "Iliacus",
+      "layer": "hip-thigh"
+    },
+    "psoas-major": {
+      "name": "Psoas major",
+      "layer": "hip-thigh"
+    },
+    "pectineus": {
+      "name": "Pectineus",
+      "layer": "hip-thigh"
+    },
+    "adductor-longus": {
+      "name": "Adductor longus",
+      "layer": "hip-thigh"
+    },
+    "adductor-magnus": {
+      "name": "Adductor magnus",
+      "layer": "hip-thigh"
+    },
+    "gracilis": {
+      "name": "Gracilis",
+      "layer": "hip-thigh"
+    },
+    "sartorius": {
+      "name": "Sartorius",
+      "layer": "hip-thigh"
+    },
+    "tensor-fasciae-latae": {
+      "name": "Tensor fasciae latae",
+      "layer": "hip-thigh"
+    },
+    "rectus-femoris": {
+      "name": "Rectus femoris (quadriceps)",
+      "layer": "hip-thigh"
+    },
+    "vastus-lateralis": {
+      "name": "Vastus lateralis (quadriceps)",
+      "layer": "hip-thigh"
+    },
+    "vastus-medialis": {
+      "name": "Vastus medialis (quadriceps)",
+      "layer": "hip-thigh"
+    },
+    "vastus-intermedius": {
+      "name": "Vastus intermedius (quadriceps)",
+      "layer": "hip-thigh"
+    },
+    "biceps-femoris": {
+      "name": "Biceps femoris (hamstring)",
+      "layer": "hip-thigh"
+    },
+    "semitendinosus": {
+      "name": "Semitendinosus (hamstring)",
+      "layer": "hip-thigh"
+    },
+    "semimembranosus": {
+      "name": "Semimembranosus (hamstring)",
+      "layer": "hip-thigh"
+    },
+    "gastrocnemius": {
+      "name": "Gastrocnemius (calf)",
+      "layer": "leg"
+    },
+    "soleus": {
+      "name": "Soleus",
+      "layer": "leg"
+    },
+    "tibialis-anterior": {
+      "name": "Tibialis anterior",
+      "layer": "leg"
+    },
+    "tibialis-posterior": {
+      "name": "Tibialis posterior",
+      "layer": "leg"
+    },
+    "fibularis-longus": {
+      "name": "Fibularis (peroneus) longus",
+      "layer": "leg"
+    },
+    "extensor-digitorum-longus": {
+      "name": "Extensor digitorum longus",
+      "layer": "leg"
+    },
+    "ctx-skeleton": {
+      "name": "Skeleton",
+      "layer": "context",
+      "quiz": false
+    }
+  },
+  "quizzes": [
+    {
+      "id": "gym",
+      "title": "Gym muscles",
+      "subtitle": "The ones on the workout chart",
+      "parts": [
+        "trapezius",
+        "latissimus-dorsi",
+        "deltoid",
+        "pectoralis-major",
+        "biceps-brachii",
+        "triceps-brachii",
+        "brachioradialis",
+        "rectus-abdominis",
+        "external-oblique",
+        "gluteus-maximus",
+        "rectus-femoris",
+        "vastus-lateralis",
+        "biceps-femoris",
+        "gastrocnemius",
+        "soleus"
+      ]
+    },
+    {
+      "id": "upper",
+      "title": "Upper body",
+      "subtitle": "Neck to forearm",
+      "parts": [
+        "masseter",
+        "sternocleidomastoid",
+        "trapezius",
+        "latissimus-dorsi",
+        "rhomboid-major",
+        "levator-scapulae",
+        "deltoid",
+        "supraspinatus",
+        "infraspinatus",
+        "teres-major",
+        "teres-minor",
+        "serratus-anterior",
+        "pectoralis-major",
+        "pectoralis-minor",
+        "biceps-brachii",
+        "triceps-brachii",
+        "brachialis",
+        "brachioradialis",
+        "flexor-carpi-radialis",
+        "extensor-digitorum"
+      ]
+    },
+    {
+      "id": "lower",
+      "title": "Lower body",
+      "subtitle": "Hip to ankle",
+      "parts": [
+        "gluteus-maximus",
+        "gluteus-medius",
+        "iliacus",
+        "psoas-major",
+        "adductor-longus",
+        "adductor-magnus",
+        "gracilis",
+        "sartorius",
+        "tensor-fasciae-latae",
+        "rectus-femoris",
+        "vastus-lateralis",
+        "vastus-medialis",
+        "biceps-femoris",
+        "semitendinosus",
+        "semimembranosus",
+        "gastrocnemius",
+        "soleus",
+        "tibialis-anterior",
+        "fibularis-longus"
+      ]
+    },
+    {
+      "id": "all",
+      "title": "Everything",
+      "subtitle": "All the muscles",
+      "parts": "all"
+    }
+  ]
+}

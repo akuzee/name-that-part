@@ -1,0 +1,19 @@
+{
+  "name": "part-games",
+  "version": "1.0.0",
+  "description": "Seterra for objects: 3D part-naming quiz games",
+  "scripts": {
+    "serve": "node tools/serve.mjs",
+    "test": "node tools/audit.mjs && node tools/test-quiz.mjs house framing && node tools/test-quiz.mjs engine-i4 all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.9.0"
+  },
+  "private": true
+}

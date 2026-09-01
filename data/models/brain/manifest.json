@@ -1,0 +1,427 @@
+{
+  "id": "brain",
+  "title": "Brain",
+  "blurb": "Gyri, deep structures, ventricles, brainstem and cerebellum.",
+  "attribution": "BodyParts3D, © The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan (via github.com/Kevin-Mattheus-Moerman/BodyParts3D).",
+  "license": "CC BY-SA 2.1 JP",
+  "source": {
+    "kind": "stl-set",
+    "dir": "../../bp3d/",
+    "rotate": [
+      -1.5707963,
+      0,
+      0
+    ],
+    "files": [
+      {
+        "file": "FMA72661.stl",
+        "part": "precentral-gyrus"
+      },
+      {
+        "file": "FMA72662.stl",
+        "part": "precentral-gyrus"
+      },
+      {
+        "file": "FMA72665.stl",
+        "part": "postcentral-gyrus"
+      },
+      {
+        "file": "FMA72666.stl",
+        "part": "postcentral-gyrus"
+      },
+      {
+        "file": "FMA72653.stl",
+        "part": "superior-frontal-gyrus"
+      },
+      {
+        "file": "FMA72654.stl",
+        "part": "superior-frontal-gyrus"
+      },
+      {
+        "file": "FMA72655.stl",
+        "part": "middle-frontal-gyrus"
+      },
+      {
+        "file": "FMA72656.stl",
+        "part": "middle-frontal-gyrus"
+      },
+      {
+        "file": "FMA72800.stl",
+        "part": "superior-temporal-gyrus"
+      },
+      {
+        "file": "FMA72801.stl",
+        "part": "superior-temporal-gyrus"
+      },
+      {
+        "file": "FMA72804.stl",
+        "part": "superior-temporal-gyrus"
+      },
+      {
+        "file": "FMA72805.stl",
+        "part": "superior-temporal-gyrus"
+      },
+      {
+        "file": "FMA72685.stl",
+        "part": "middle-temporal-gyrus"
+      },
+      {
+        "file": "FMA72686.stl",
+        "part": "middle-temporal-gyrus"
+      },
+      {
+        "file": "FMA72687.stl",
+        "part": "inferior-temporal-gyrus"
+      },
+      {
+        "file": "FMA72688.stl",
+        "part": "inferior-temporal-gyrus"
+      },
+      {
+        "file": "FMA72669.stl",
+        "part": "angular-gyrus"
+      },
+      {
+        "file": "FMA72670.stl",
+        "part": "angular-gyrus"
+      },
+      {
+        "file": "FMA72667.stl",
+        "part": "supramarginal-gyrus"
+      },
+      {
+        "file": "FMA72668.stl",
+        "part": "supramarginal-gyrus"
+      },
+      {
+        "file": "FMA72717.stl",
+        "part": "cingulate-gyrus"
+      },
+      {
+        "file": "FMA72718.stl",
+        "part": "cingulate-gyrus"
+      },
+      {
+        "file": "FMA72689.stl",
+        "part": "fusiform-gyrus"
+      },
+      {
+        "file": "FMA72690.stl",
+        "part": "fusiform-gyrus"
+      },
+      {
+        "file": "FMA72705.stl",
+        "part": "parahippocampal-gyrus"
+      },
+      {
+        "file": "FMA72706.stl",
+        "part": "parahippocampal-gyrus"
+      },
+      {
+        "file": "FMA72975.stl",
+        "part": "occipital-lobe"
+      },
+      {
+        "file": "FMA72976.stl",
+        "part": "occipital-lobe"
+      },
+      {
+        "file": "FMA61822.stl",
+        "part": "white-matter"
+      },
+      {
+        "file": "FMA86464.stl",
+        "part": "corpus-callosum"
+      },
+      {
+        "file": "FMA61970.stl",
+        "part": "fornix"
+      },
+      {
+        "file": "FMA72924.stl",
+        "part": "fornix"
+      },
+      {
+        "file": "FMA72925.stl",
+        "part": "fornix"
+      },
+      {
+        "file": "FMA61844.stl",
+        "part": "septum-pellucidum"
+      },
+      {
+        "file": "FMA258714.stl",
+        "part": "thalamus"
+      },
+      {
+        "file": "FMA258716.stl",
+        "part": "thalamus"
+      },
+      {
+        "file": "FMA62008nsn.stl",
+        "part": "hypothalamus"
+      },
+      {
+        "file": "FMA72713.stl",
+        "part": "hippocampus"
+      },
+      {
+        "file": "FMA72714.stl",
+        "part": "hippocampus"
+      },
+      {
+        "file": "FMA13889.stl",
+        "part": "pituitary"
+      },
+      {
+        "file": "FMA274027.stl",
+        "part": "choroid-plexus"
+      },
+      {
+        "file": "FMA274029.stl",
+        "part": "choroid-plexus"
+      },
+      {
+        "file": "FMA78449.stl",
+        "part": "lateral-ventricle"
+      },
+      {
+        "file": "FMA78450.stl",
+        "part": "lateral-ventricle"
+      },
+      {
+        "file": "FMA78454.stl",
+        "part": "third-ventricle"
+      },
+      {
+        "file": "FMA78469.stl",
+        "part": "fourth-ventricle"
+      },
+      {
+        "file": "FMA78467.stl",
+        "part": "cerebral-aqueduct"
+      },
+      {
+        "file": "FMA62394.stl",
+        "part": "midbrain"
+      },
+      {
+        "file": "FMA61993nsn.stl",
+        "part": "midbrain"
+      },
+      {
+        "file": "FMA67943.stl",
+        "part": "pons"
+      },
+      {
+        "file": "FMA62004.stl",
+        "part": "medulla"
+      },
+      {
+        "file": "FMA67944.stl",
+        "part": "cerebellum"
+      }
+    ]
+  },
+  "camera": {
+    "theta": 1.2,
+    "phi": 1.25,
+    "zoom": 0.85
+  },
+  "layers": [
+    {
+      "id": "cortex",
+      "name": "Cortex (gyri)",
+      "color": "#d5a8a0"
+    },
+    {
+      "id": "deep",
+      "name": "Deep structures",
+      "color": "#c09088"
+    },
+    {
+      "id": "stem",
+      "name": "Brainstem & cerebellum",
+      "color": "#c8a090"
+    },
+    {
+      "id": "ventricles",
+      "name": "Ventricles (CSF)",
+      "color": "#70a8c8"
+    }
+  ],
+  "parts": {
+    "precentral-gyrus": {
+      "name": "Precentral gyrus (primary motor cortex)",
+      "layer": "cortex",
+      "color": "#d88878"
+    },
+    "postcentral-gyrus": {
+      "name": "Postcentral gyrus (primary somatosensory cortex)",
+      "layer": "cortex",
+      "color": "#d8a060"
+    },
+    "superior-frontal-gyrus": {
+      "name": "Superior frontal gyrus",
+      "layer": "cortex"
+    },
+    "middle-frontal-gyrus": {
+      "name": "Middle frontal gyrus",
+      "layer": "cortex"
+    },
+    "superior-temporal-gyrus": {
+      "name": "Superior temporal gyrus",
+      "layer": "cortex"
+    },
+    "middle-temporal-gyrus": {
+      "name": "Middle temporal gyrus",
+      "layer": "cortex"
+    },
+    "inferior-temporal-gyrus": {
+      "name": "Inferior temporal gyrus",
+      "layer": "cortex"
+    },
+    "angular-gyrus": {
+      "name": "Angular gyrus",
+      "layer": "cortex"
+    },
+    "supramarginal-gyrus": {
+      "name": "Supramarginal gyrus",
+      "layer": "cortex"
+    },
+    "cingulate-gyrus": {
+      "name": "Cingulate gyrus",
+      "layer": "cortex",
+      "color": "#c8a8b8"
+    },
+    "fusiform-gyrus": {
+      "name": "Fusiform gyrus",
+      "layer": "cortex"
+    },
+    "parahippocampal-gyrus": {
+      "name": "Parahippocampal gyrus",
+      "layer": "cortex"
+    },
+    "occipital-lobe": {
+      "name": "Occipital lobe (visual cortex)",
+      "layer": "cortex",
+      "color": "#b8c088"
+    },
+    "white-matter": {
+      "name": "Cerebral white matter",
+      "layer": "deep",
+      "color": "#e8e0d8"
+    },
+    "corpus-callosum": {
+      "name": "Corpus callosum",
+      "layer": "deep",
+      "color": "#e0d0b8"
+    },
+    "fornix": {
+      "name": "Fornix",
+      "layer": "deep"
+    },
+    "septum-pellucidum": {
+      "name": "Septum pellucidum",
+      "layer": "deep"
+    },
+    "thalamus": {
+      "name": "Thalamus",
+      "layer": "deep",
+      "color": "#b87890"
+    },
+    "hypothalamus": {
+      "name": "Hypothalamus",
+      "layer": "deep",
+      "color": "#c88868"
+    },
+    "hippocampus": {
+      "name": "Hippocampus",
+      "layer": "deep",
+      "color": "#a05868"
+    },
+    "pituitary": {
+      "name": "Pituitary gland",
+      "layer": "deep",
+      "color": "#d8a848"
+    },
+    "choroid-plexus": {
+      "name": "Choroid plexus",
+      "layer": "ventricles",
+      "color": "#a05050"
+    },
+    "lateral-ventricle": {
+      "name": "Lateral ventricle",
+      "layer": "ventricles"
+    },
+    "third-ventricle": {
+      "name": "Third ventricle",
+      "layer": "ventricles"
+    },
+    "fourth-ventricle": {
+      "name": "Fourth ventricle",
+      "layer": "ventricles"
+    },
+    "cerebral-aqueduct": {
+      "name": "Cerebral aqueduct",
+      "layer": "ventricles"
+    },
+    "midbrain": {
+      "name": "Midbrain",
+      "layer": "stem"
+    },
+    "pons": {
+      "name": "Pons",
+      "layer": "stem"
+    },
+    "medulla": {
+      "name": "Medulla oblongata",
+      "layer": "stem"
+    },
+    "cerebellum": {
+      "name": "Cerebellum",
+      "layer": "stem",
+      "color": "#b08878"
+    }
+  },
+  "quizzes": [
+    {
+      "id": "cortex",
+      "title": "Cortex",
+      "subtitle": "Lobes and gyri",
+      "parts": {
+        "layer": "cortex"
+      }
+    },
+    {
+      "id": "deep",
+      "title": "Deep structures",
+      "subtitle": "Thalamus, hippocampus and friends",
+      "parts": {
+        "layer": "deep"
+      }
+    },
+    {
+      "id": "stem-ventricles",
+      "title": "Brainstem & ventricles",
+      "subtitle": "Midbrain to medulla, plus the CSF spaces",
+      "parts": [
+        "midbrain",
+        "pons",
+        "medulla",
+        "cerebellum",
+        "lateral-ventricle",
+        "third-ventricle",
+        "fourth-ventricle",
+        "cerebral-aqueduct",
+        "choroid-plexus"
+      ]
+    },
+    {
+      "id": "all",
+      "title": "Everything",
+      "subtitle": "The whole brain",
+      "parts": "all"
+    }
+  ]
+}
