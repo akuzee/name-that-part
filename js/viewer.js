@@ -81,7 +81,7 @@ export class Viewer {
     let sceneRoot;
     if (src.kind === 'procedural') {
       const mod = await import(new URL(manifest.baseUrl + src.module, document.baseURI).href);
-      sceneRoot = mod.build(THREE);
+      sceneRoot = mod.build(THREE, src.variant);
     } else if (src.kind === 'gltf') {
       const loader = new GLTFLoader();
       const draco = new DRACOLoader();

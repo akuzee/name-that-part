@@ -4,31 +4,31 @@
       "id": "skeleton",
       "title": "Human Skeleton",
       "blurb": "Every bone, from the BodyParts3D anatomical database.",
-      "badge": "BodyParts3D · CC BY-SA"
+      "badge": "BodyParts3D \u00b7 CC BY-SA"
     },
     {
       "id": "organs",
       "title": "Torso Organs",
       "blurb": "Heart, lungs, GI tract, kidneys and great vessels in a ghosted rib cage.",
-      "badge": "BodyParts3D · CC BY-SA"
+      "badge": "BodyParts3D \u00b7 CC BY-SA"
     },
     {
       "id": "heart",
       "title": "Heart",
-      "blurb": "Valves, papillary muscles and coronary vessels — see-through to look inside.",
-      "badge": "BodyParts3D · CC BY-SA"
+      "blurb": "Valves, papillary muscles and coronary vessels \u2014 see-through to look inside.",
+      "badge": "BodyParts3D \u00b7 CC BY-SA"
     },
     {
       "id": "brain",
       "title": "Brain",
       "blurb": "Gyri, deep structures, ventricles, brainstem and cerebellum.",
-      "badge": "BodyParts3D · CC BY-SA"
+      "badge": "BodyParts3D \u00b7 CC BY-SA"
     },
     {
       "id": "muscles",
       "title": "Major Muscles",
       "blurb": "Gym muscles to rotator cuff, over a ghosted skeleton.",
-      "badge": "BodyParts3D · CC BY-SA"
+      "badge": "BodyParts3D \u00b7 CC BY-SA"
     },
     {
       "id": "house",
@@ -40,6 +40,42 @@
       "id": "engine-i4",
       "title": "Inline-4 Engine",
       "blurb": "Block, crank, pistons, valvetrain, intake and exhaust.",
+      "badge": "Procedural"
+    },
+    {
+      "id": "cell",
+      "title": "Animal Cell",
+      "blurb": "Organelles in textbook cutaway \u2014 nucleolus to microtubules.",
+      "badge": "Procedural"
+    },
+    {
+      "id": "plant-cell",
+      "title": "Plant Cell",
+      "blurb": "Cell wall, central vacuole, chloroplasts.",
+      "badge": "Procedural"
+    },
+    {
+      "id": "flower",
+      "title": "Flower",
+      "blurb": "Sepals to stigma \u2014 all four whorls, ovules inside.",
+      "badge": "Procedural"
+    },
+    {
+      "id": "car",
+      "title": "Whole Car",
+      "blurb": "Ghosted body over drivetrain, exhaust, suspension, steering.",
+      "badge": "Procedural"
+    },
+    {
+      "id": "desktop-pc",
+      "title": "Desktop PC",
+      "blurb": "Open ATX tower: board, CPU, GPU, RAM, PSU, fans, cables.",
+      "badge": "Procedural"
+    },
+    {
+      "id": "chip",
+      "title": "CPU Package",
+      "blurb": "Die, substrate, solder balls and heat spreader in cutaway.",
       "badge": "Procedural"
     }
   ]

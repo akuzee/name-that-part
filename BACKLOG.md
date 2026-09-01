@@ -39,6 +39,24 @@ Deferred ideas with rationale. Research findings dated 2026-09-01.
   Warehouse (murky per-model terms), Smithsonian scans (fused single meshes),
   BlenderKit royalty-free (extractability clause conflicts with web serving).
 
+- **Biology sourcing (researched 2026-09-01)**: NIH 3D models are single fused
+  meshes (print-oriented) — unusable for part quizzes. Best real sources are
+  Sketchfab CC-BY (free account needed): "Simple Animal Cell Model" (maryk),
+  "Anatomy of a Flower" (arloopa, 22k tris), "Plant Cell | Biology" (okchs),
+  bacterium (uid 19618642dad34d0b82219c162aa522e8). Z-Anatomy veterinary repo
+  (CC-BY-SA, account-free) currently has only a pig. Procedural was endorsed
+  for: neuron, DNA helix, leaf cross-section, bacterium — good future packs.
+- **Computer sourcing (researched 2026-09-01)**: Sketchfab CC-BY "MotherBoard +
+  Components" and "Custom Gaming PC" (account needed); Raspberry Pi official
+  STEP CAD at pip.raspberrypi.com (account-free, license unstated — per-component
+  named solids, needs STEP→GLB). Chip die/package: nothing open exists —
+  procedural confirmed as the right call (shipped).
+- **Whole-car sourcing (researched 2026-09-01)**: no free model has both named
+  panels and named systems (those exist only as CC-BY-NC). CC-BY leads:
+  Gerhald "Car Chassis" (641k tris), Lexyc16 Mercedes 300 SL. CC0 Kenney Car
+  Kit (account-free) is the base if we ever want prettier panels (cut+name in
+  Blender, ~1hr). Procedural whole-car shipped instead.
+
 ## Harness features
 
 - **Type-the-name mode** (reverse quiz: part highlighted, you type/choose the

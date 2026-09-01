@@ -1,0 +1,37 @@
+{
+  "id": "cell",
+  "title": "Animal Cell",
+  "blurb": "A eukaryotic cell in textbook cutaway — organelles from nucleolus to microtubules.",
+  "attribution": "Generated procedurally for this project (schematic textbook proportions).",
+  "license": "No license restrictions — original geometry.",
+  "source": { "kind": "procedural", "module": "build.mjs", "variant": "animal" },
+  "camera": { "theta": 0.35, "phi": 1.35, "zoom": 1.0 },
+  "layers": [
+    { "id": "boundary", "name": "Membrane", "color": "#d8c8a8" },
+    { "id": "nucleus", "name": "Nucleus", "color": "#9068b0" },
+    { "id": "endomembrane", "name": "Endomembrane system", "color": "#5f8fbf" },
+    { "id": "organelles", "name": "Organelles", "color": "#c07840" },
+    { "id": "cytoskeleton", "name": "Cytoskeleton & ribosomes", "color": "#8fa050" }
+  ],
+  "parts": {
+    "cell-membrane": { "name": "Cell membrane (plasma membrane)", "layer": "boundary", "color": "#d8c8a8" },
+    "nuclear-envelope": { "name": "Nuclear envelope", "layer": "nucleus", "color": "#9068b0" },
+    "nucleolus": { "name": "Nucleolus", "layer": "nucleus", "color": "#5c3878" },
+    "chromatin": { "name": "Chromatin (DNA)", "layer": "nucleus", "color": "#7048a0" },
+    "rough-er": { "name": "Rough endoplasmic reticulum", "layer": "endomembrane", "color": "#4878b8" },
+    "smooth-er": { "name": "Smooth endoplasmic reticulum", "layer": "endomembrane", "color": "#68a0c8" },
+    "golgi": { "name": "Golgi apparatus", "layer": "endomembrane", "color": "#c8a038" },
+    "vesicle": { "name": "Vesicle", "layer": "endomembrane", "color": "#d8b868" },
+    "mitochondrion": { "name": "Mitochondrion", "layer": "organelles", "color": "#c86838" },
+    "lysosome": { "name": "Lysosome", "layer": "organelles", "color": "#a04878" },
+    "peroxisome": { "name": "Peroxisome", "layer": "organelles", "color": "#5f9f68" },
+    "centriole": { "name": "Centriole", "layer": "cytoskeleton", "color": "#b0b048" },
+    "microtubule": { "name": "Microtubule", "layer": "cytoskeleton", "color": "#90a858" },
+    "ribosome": { "name": "Ribosome", "layer": "cytoskeleton", "color": "#606878" }
+  },
+  "quizzes": [
+    { "id": "core", "title": "The big organelles", "subtitle": "Nucleus to mitochondria",
+      "parts": ["cell-membrane", "nuclear-envelope", "nucleolus", "rough-er", "smooth-er", "golgi", "mitochondrion"] },
+    { "id": "all", "title": "Everything", "subtitle": "All 14 structures", "parts": "all" }
+  ]
+}

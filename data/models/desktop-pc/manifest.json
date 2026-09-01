@@ -1,0 +1,49 @@
+{
+  "id": "desktop-pc",
+  "title": "Desktop PC",
+  "blurb": "An open ATX tower — motherboard, CPU and cooler, GPU, RAM, storage, PSU, fans and cabling.",
+  "attribution": "Generated procedurally for this project (schematic ATX proportions).",
+  "license": "No license restrictions — original geometry.",
+  "source": { "kind": "procedural", "module": "build.mjs" },
+  "camera": { "theta": 1.0, "phi": 1.35, "zoom": 1.0 },
+  "layers": [
+    { "id": "chassis", "name": "Case", "color": "#3a3f46" },
+    { "id": "board", "name": "Motherboard & onboard", "color": "#2f6f4f" },
+    { "id": "expansion", "name": "CPU, RAM & GPU", "color": "#8a929c" },
+    { "id": "power-storage", "name": "Power & storage", "color": "#5a626c" },
+    { "id": "cooling", "name": "Cooling", "color": "#7a828c" },
+    { "id": "cables", "name": "Cables", "color": "#c8b040" }
+  ],
+  "parts": {
+    "case": { "name": "Case (chassis)", "layer": "chassis", "color": "#33383f" },
+    "front-panel": { "name": "Front panel", "layer": "chassis", "color": "#2b3037" },
+    "motherboard": { "name": "Motherboard", "layer": "board", "color": "#1f5f42" },
+    "rear-io": { "name": "Rear I/O ports", "layer": "board", "color": "#8a929c" },
+    "cpu": { "name": "CPU", "layer": "expansion", "color": "#c9ccd2" },
+    "ram": { "name": "RAM (DIMM)", "layer": "expansion", "color": "#3f6fc0" },
+    "m2-ssd": { "name": "M.2 NVMe SSD", "layer": "expansion", "color": "#2f3f56" },
+    "gpu": { "name": "Graphics card (GPU)", "layer": "expansion", "color": "#454b54" },
+    "gpu-fan": { "name": "GPU fan", "layer": "expansion", "color": "#23272d" },
+    "gpu-backplate": { "name": "GPU backplate", "layer": "expansion", "color": "#5d646d" },
+    "pcie-slot": { "name": "PCIe slot", "layer": "board", "color": "#20262e" },
+    "vrm-heatsink": { "name": "VRM heatsink", "layer": "board", "color": "#767e88" },
+    "chipset-heatsink": { "name": "Chipset heatsink", "layer": "board", "color": "#767e88" },
+    "atx-connector": { "name": "24-pin ATX power connector", "layer": "board", "color": "#1d2126" },
+    "cmos-battery": { "name": "CMOS battery", "layer": "board", "color": "#d8d8dc" },
+    "cpu-cooler": { "name": "CPU cooler (heatsink & heat pipes)", "layer": "cooling", "color": "#9aa2ac" },
+    "cpu-fan": { "name": "CPU cooler fan", "layer": "cooling", "color": "#23272d" },
+    "case-fan": { "name": "Case fan", "layer": "cooling", "color": "#2a2f36" },
+    "psu-fan": { "name": "PSU fan", "layer": "cooling", "color": "#23272d" },
+    "psu": { "name": "Power supply (PSU)", "layer": "power-storage", "color": "#41464e" },
+    "hdd": { "name": "3.5\" hard drive (HDD)", "layer": "power-storage", "color": "#6b727c" },
+    "ssd-25": { "name": "2.5\" SATA SSD", "layer": "power-storage", "color": "#33383f" },
+    "power-cable": { "name": "Power cable (24-pin)", "layer": "cables", "color": "#c8b040" },
+    "sata-cable": { "name": "SATA cable", "layer": "cables", "color": "#c04040" }
+  },
+  "quizzes": [
+    { "id": "core", "title": "The essentials", "subtitle": "What every build needs",
+      "parts": ["motherboard", "cpu", "cpu-cooler", "ram", "gpu", "m2-ssd", "psu", "case-fan"] },
+    { "id": "board", "title": "On the motherboard", "subtitle": "Slots, sinks and sockets", "parts": { "layer": "board" } },
+    { "id": "all", "title": "Everything", "subtitle": "The whole build", "parts": "all" }
+  ]
+}

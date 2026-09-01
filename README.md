@@ -76,6 +76,11 @@ downloaded model.
 | Major Muscles | BodyParts3D | 55 parts over a ghosted skeleton |
 | House: Framing & Systems | procedural (`build.mjs`) | 41 part types: footing→ridge board, plumbing, HVAC, electrical |
 | Inline-4 Engine | procedural | 29 part types: block, rotating assembly, valvetrain, bolt-ons |
+| Whole Car | procedural | 38 parts: body panels + drivetrain, exhaust, fuel, suspension, steering, brakes under a ghosted shell |
+| Animal Cell / Plant Cell | procedural | 14 parts each, textbook cutaway with organelles |
+| Flower | procedural | 11 parts: all four whorls, ovules inside the ovary |
+| Desktop PC | procedural | 24 parts: open ATX tower, board-level detail |
+| CPU Package | procedural | 8 parts: die stack under a quarter-cut heat spreader |
 
 Procedural models are generated as named Three.js meshes at load time — zero
 licensing burden, guaranteed-correct names, tiny payload.

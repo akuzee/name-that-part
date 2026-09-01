@@ -6,6 +6,9 @@
  * Usage: node tools/test-quiz.mjs [model quizId]   (server on :8023)
  */
 import puppeteer from 'puppeteer-core';
+import { ensureServer } from './ensure-server.mjs';
+
+await ensureServer();
 
 const model = process.argv[2] || 'house';
 const quizId = process.argv[3] || 'framing';

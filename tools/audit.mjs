@@ -6,6 +6,9 @@
  * Usage: node tools/audit.mjs   (server must be running on :8023)
  */
 import puppeteer from 'puppeteer-core';
+import { ensureServer } from './ensure-server.mjs';
+
+await ensureServer();
 
 const browser = await puppeteer.launch({
   executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',

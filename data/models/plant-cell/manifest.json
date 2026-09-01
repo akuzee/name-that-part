@@ -1,0 +1,37 @@
+{
+  "id": "plant-cell",
+  "title": "Plant Cell",
+  "blurb": "Cell wall, central vacuole and chloroplasts — how a plant cell differs from an animal one.",
+  "attribution": "Generated procedurally for this project (schematic textbook proportions).",
+  "license": "No license restrictions — original geometry.",
+  "source": { "kind": "procedural", "module": "../cell/build.mjs", "variant": "plant" },
+  "camera": { "theta": 0.35, "phi": 1.35, "zoom": 1.0 },
+  "layers": [
+    { "id": "boundary", "name": "Wall & membrane", "color": "#d8c8a8" },
+    { "id": "nucleus", "name": "Nucleus", "color": "#9068b0" },
+    { "id": "endomembrane", "name": "Endomembrane system", "color": "#5f8fbf" },
+    { "id": "organelles", "name": "Organelles", "color": "#4f9f48" },
+    { "id": "cytoskeleton", "name": "Ribosomes", "color": "#8fa050" }
+  ],
+  "parts": {
+    "cell-wall": { "name": "Cell wall", "layer": "boundary", "color": "#b8a878" },
+    "cell-membrane": { "name": "Cell membrane (plasma membrane)", "layer": "boundary", "color": "#d8c8a8" },
+    "nuclear-envelope": { "name": "Nuclear envelope", "layer": "nucleus", "color": "#9068b0" },
+    "nucleolus": { "name": "Nucleolus", "layer": "nucleus", "color": "#5c3878" },
+    "chromatin": { "name": "Chromatin (DNA)", "layer": "nucleus", "color": "#7048a0" },
+    "rough-er": { "name": "Rough endoplasmic reticulum", "layer": "endomembrane", "color": "#4878b8" },
+    "smooth-er": { "name": "Smooth endoplasmic reticulum", "layer": "endomembrane", "color": "#68a0c8" },
+    "golgi": { "name": "Golgi apparatus", "layer": "endomembrane", "color": "#c8a038" },
+    "vesicle": { "name": "Vesicle", "layer": "endomembrane", "color": "#d8b868" },
+    "mitochondrion": { "name": "Mitochondrion", "layer": "organelles", "color": "#c86838" },
+    "central-vacuole": { "name": "Central vacuole", "layer": "organelles", "color": "#88b8d8" },
+    "chloroplast": { "name": "Chloroplast", "layer": "organelles", "color": "#3f9f38" },
+    "amyloplast": { "name": "Amyloplast (starch storage)", "layer": "organelles", "color": "#d8d0b0" },
+    "ribosome": { "name": "Ribosome", "layer": "cytoskeleton", "color": "#606878" }
+  },
+  "quizzes": [
+    { "id": "plant-only", "title": "What animals don't have", "subtitle": "Wall, vacuole, plastids",
+      "parts": ["cell-wall", "central-vacuole", "chloroplast", "amyloplast"] },
+    { "id": "all", "title": "Everything", "subtitle": "All 14 structures", "parts": "all" }
+  ]
+}

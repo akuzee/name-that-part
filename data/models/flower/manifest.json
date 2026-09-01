@@ -1,0 +1,33 @@
+{
+  "id": "flower",
+  "title": "Flower",
+  "blurb": "All four whorls of a perfect flower — sepals to stigma, with ovules hiding inside the ovary.",
+  "attribution": "Generated procedurally for this project (schematic perfect flower).",
+  "license": "No license restrictions — original geometry.",
+  "source": { "kind": "procedural", "module": "build.mjs" },
+  "camera": { "theta": 0.5, "phi": 1.15, "zoom": 0.9 },
+  "layers": [
+    { "id": "stem", "name": "Stem & leaf", "color": "#4f8f3f" },
+    { "id": "perianth", "name": "Sepals & petals", "color": "#d878a8" },
+    { "id": "male", "name": "Stamens", "color": "#d8b838" },
+    { "id": "female", "name": "Pistil", "color": "#8fb050" }
+  ],
+  "parts": {
+    "peduncle": { "name": "Peduncle (flower stalk)", "layer": "stem", "color": "#4f8f3f" },
+    "leaf": { "name": "Leaf", "layer": "stem", "color": "#3f7f34" },
+    "receptacle": { "name": "Receptacle", "layer": "stem", "color": "#6f9f4a" },
+    "sepal": { "name": "Sepal (calyx)", "layer": "perianth", "color": "#5f9f44" },
+    "petal": { "name": "Petal (corolla)", "layer": "perianth", "color": "#e082b0" },
+    "filament": { "name": "Filament", "layer": "male", "color": "#e8e0c0" },
+    "anther": { "name": "Anther (pollen)", "layer": "male", "color": "#d8a828" },
+    "ovary": { "name": "Ovary", "layer": "female", "color": "#8fb050" },
+    "ovule": { "name": "Ovule", "layer": "female", "color": "#e8e4c8" },
+    "style": { "name": "Style", "layer": "female", "color": "#b8d078" },
+    "stigma": { "name": "Stigma", "layer": "female", "color": "#c8d838" }
+  },
+  "quizzes": [
+    { "id": "reproductive", "title": "Reproductive parts", "subtitle": "Stamen and pistil, piece by piece",
+      "parts": ["filament", "anther", "ovary", "ovule", "style", "stigma"] },
+    { "id": "all", "title": "Everything", "subtitle": "The whole flower", "parts": "all" }
+  ]
+}

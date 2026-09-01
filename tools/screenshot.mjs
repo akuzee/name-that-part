@@ -3,6 +3,9 @@
  * Usage: node tools/screenshot.mjs "#/explore/house" out.png [--click x,y]
  */
 import puppeteer from 'puppeteer-core';
+import { ensureServer } from './ensure-server.mjs';
+
+await ensureServer();
 
 const route = process.argv[2] || '#/';
 const out = process.argv[3] || 'shot.png';
