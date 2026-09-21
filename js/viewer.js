@@ -90,17 +90,22 @@ export class Viewer {
       const gltf = await loader.loadAsync(manifest.baseUrl + src.file);
       sceneRoot = gltf.scene;
     } else if (src.kind === 'stl-set') {
-      // one STL per structure, part id assigned per file in the manifest
+      // one STL per structure, part id assigned per file in the manifest.
+      // Files are served locally when the cache has been fetched; otherwise we
+      // stream them straight from the upstream mirror (it sends CORS *), so a
+      // fresh clone plays with no download step.
       sceneRoot = new THREE.Group();
       const loader = new STLLoader();
       const stub = new THREE.MeshStandardMaterial();
+      const localBase = manifest.baseUrl + (src.dir || '');
+      const base = await this._pickStlBase(localBase, src);
       let done = 0;
       const onProgress = this.onLoadProgress;
       const queue = [...src.files];
       const workers = Array.from({ length: 12 }, async () => {
         while (queue.length) {
           const { file, part } = queue.shift();
-          const geo = await loader.loadAsync(manifest.baseUrl + (src.dir || '') + file);
+          const geo = await loader.loadAsync(base + file);
           const mesh = new THREE.Mesh(geo, stub);
           mesh.userData.part = part;
           sceneRoot.add(mesh);
@@ -114,6 +119,17 @@ export class Viewer {
     if (src.rotate) sceneRoot.rotation.set(...src.rotate);
     this._ingest(sceneRoot, manifest);
     this._frameModel(manifest.camera);
+  }
+
+  /* Probe one file locally; fall back to the upstream mirror if it's absent. */
+  async _pickStlBase(localBase, src) {
+    if (!src.remote || !src.files.length) return localBase;
+    try {
+      const res = await fetch(localBase + src.files[0].file, { method: 'HEAD' });
+      if (res.ok) return localBase;
+    } catch { /* fall through to remote */ }
+    if (this.onLoadProgress) this.onLoadProgress(0, src.files.length, 'streaming from source');
+    return src.remote;
   }
 
   /* Flatten to a single group of world-space meshes and build the part registry. */

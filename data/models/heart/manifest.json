@@ -7,6 +7,7 @@
   "source": {
     "kind": "stl-set",
     "dir": "../../bp3d/",
+    "remote": "https://raw.githubusercontent.com/Kevin-Mattheus-Moerman/BodyParts3D/main/assets/BodyParts3D_data/stl/",
     "rotate": [
       -1.5707963,
       0,

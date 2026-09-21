@@ -409,7 +409,13 @@ for (const packId of packIds) {
       blurb: pack.blurb,
       attribution: ATTRIB,
       license: 'CC BY-SA 2.1 JP',
-      source: { kind: 'stl-set', dir: '../../bp3d/', rotate: [-1.5707963, 0, 0], files },
+      source: {
+        kind: 'stl-set',
+        dir: '../../bp3d/',
+        remote: `${RAW}/stl/`,   // used when the local cache isn't present
+        rotate: [-1.5707963, 0, 0],
+        files,
+      },
       camera: pack.camera,
       layers,
       parts,

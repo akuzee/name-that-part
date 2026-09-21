@@ -84,8 +84,11 @@ async function loadModelIntoViewer(modelId) {
     $('loading').hidden = false;
     $('loading-msg').textContent = 'Loading model…';
     current.manifest = await loadManifest(modelId);
-    viewer.onLoadProgress = (done, total) => {
-      $('loading-msg').textContent = `Loading model… ${done} / ${total}`;
+    let loadNote = '';
+    viewer.onLoadProgress = (done, total, note) => {
+      if (note !== undefined) loadNote = note;
+      $('loading-msg').textContent =
+        `Loading model… ${done} / ${total}` + (loadNote ? ` (${loadNote})` : '');
     };
     try {
       await viewer.load(current.manifest);
