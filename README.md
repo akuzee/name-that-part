@@ -1,18 +1,37 @@
-# Part Games
+# Name That Part
 
 Seterra for objects: 3D quiz games that teach you what every part of a thing is
 called. Load a 3D model whose subcomponents are named, and the harness turns it
 into a click-the-part quiz — with see-through, explode, cut-away and layer-peel
 controls so you can reach parts buried inside.
 
-Sibling of `../map games` (same game loop and scoring, ported from 2D SVG maps
-to 3D models).
+**▶ Play in your browser: https://akuzee.github.io/name-that-part/** — nothing
+to install, download, or unzip.
 
-## Run
+## Run it locally
+
+No build step, no bundler, no unzipping — the repo is the app.
 
 ```sh
+git clone https://github.com/akuzee/name-that-part
+cd name-that-part
 node tools/serve.mjs        # → http://localhost:8023
 ```
+
+That's it: every pack works immediately. Three.js is vendored in `vendor/`, the
+procedural models generate themselves at load time, and the anatomy packs
+stream their meshes from the upstream BodyParts3D mirror on demand.
+
+**Optional — cache the anatomy meshes locally** (much faster loads, works
+offline; ~620MB in `data/bp3d/`, gitignored):
+
+```sh
+npm install                       # only needed for the dev tools
+node tools/fetch-anatomy.mjs      # or: … skeleton heart  (just the packs you want)
+```
+
+The app prefers the local cache and falls back to streaming, so you can do this
+at any time — before playing, later, or never.
 
 ## Play
 
@@ -85,6 +104,14 @@ downloaded model.
 Procedural models are generated as named Three.js meshes at load time — zero
 licensing burden, guaranteed-correct names, tiny payload.
 
+Anatomy packs are defined by code, not checked-in assets: `tools/fetch-anatomy.mjs`
+holds a `PACKS` table of `part → name-matching regex`, resolves it against the
+BodyParts3D structure list, and writes each manifest. The meshes themselves are
+never committed — the app streams them from the upstream mirror, or serves them
+from the optional local cache in `data/bp3d/` (gitignored). To regroup
+structures or add a pack, edit the regex table and re-run.
+
+
 ## Known limitation: model fidelity
 
 The anatomy packs are detailed (real scan-derived meshes from BodyParts3D);
@@ -102,12 +129,6 @@ a piston is a cylinder. This is the main area where contributions help:
 - **Upgrade a procedural builder**: each model is one self-contained
   `build.mjs` — more detailed geometry (bird's-mouthed rafters, a bored engine
   block, ribbed organelles) is a pure-code contribution with no asset pipeline.
-
-Anatomy packs share one STL cache, `data/bp3d/` (gitignored, ~600MB,
-regenerable): `node tools/fetch-anatomy.mjs [pack…]` downloads from the
-BodyParts3D GitHub mirror and rebuilds each pack's manifest. Name-matching is
-code (the `PACKS` table in that script), so packs are reproducible and
-tweakable — edit a part's regex to regroup structures, then re-run.
 
 ## Sourcing real models (researched Sep 2026, see BACKLOG.md)
 
@@ -137,7 +158,7 @@ js/engine.js          game loop (scoring identical to map games)
 js/app.js             routing, library, toolbox wiring
 data/index.json       model catalog
 data/models/<id>/     manifest.json + model.glb or build.mjs
-tools/serve.mjs       zero-dependency static server
+tools/serve.mjs       zero-dependency static server (no npm install needed)
 tools/inspect-glb.mjs GLB node-name report + manifest drafter
 vendor/               three.js modules (pinned, no build step)
 ```
