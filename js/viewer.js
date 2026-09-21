@@ -11,6 +11,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import { STLLoader } from 'three/addons/loaders/STLLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { mapNodeName, autoSlug, prettyName } from './data.js';
 
 const STATE_COLORS = {
@@ -29,8 +30,16 @@ export class Viewer {
     this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.renderer.localClippingEnabled = true;
+    // Filmic tone mapping + image-based lighting: primitives read as solid
+    // objects instead of flat silhouettes, and roughness/metalness mean something.
+    this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    this.renderer.toneMappingExposure = 1.15;
     this.scene = new THREE.Scene();
     this.scene.background = new THREE.Color(0x14161a);
+    const pmrem = new THREE.PMREMGenerator(this.renderer);
+    this.scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+    this.scene.environmentIntensity = 0.55;
+    pmrem.dispose();
 
     this.camera = new THREE.PerspectiveCamera(45, 1, 0.01, 5000);
     this.controls = new OrbitControls(this.camera, canvas);
