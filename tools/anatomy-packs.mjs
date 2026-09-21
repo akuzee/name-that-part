@@ -1,36 +1,16 @@
 /*
- * Build anatomy packs from the BodyParts3D GitHub mirror
- * (github.com/Kevin-Mattheus-Moerman/BodyParts3D, CC BY-SA 2.1 JP).
- *
- * Structures are matched by English name (parts_list_e.txt) with anchored
- * regexes, bucketed into concept-level parts (left+right merged, subparts
- * grouped), downloaded as per-FMA-ID binary STLs into the shared cache
- * data/bp3d/, and each pack's manifest.json is generated.
- *
- * Usage:
- *   node tools/fetch-anatomy.mjs --dry [pack…]   # show matching, no downloads
- *   node tools/fetch-anatomy.mjs [pack…]         # build (default: all packs)
- * Packs: skeleton organs brain heart muscles
+ * Anatomy pack definitions, shared by the BodyParts3D build pipeline.
+ * Each part is matched by an anchored regex against the structure's English
+ * name, so packs are reproducible and easy to regroup.
  */
-import fs from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const CACHE = path.join(root, 'data/bp3d');
-const RAW = 'https://raw.githubusercontent.com/Kevin-Mattheus-Moerman/BodyParts3D/main/assets/BodyParts3D_data';
-const ATTRIB = 'BodyParts3D, © The Database Center for Life Science, licensed under CC Attribution-Share Alike 2.1 Japan (via github.com/Kevin-Mattheus-Moerman/BodyParts3D).';
-
-const dry = process.argv.includes('--dry');
-const wanted = process.argv.slice(2).filter((a) => a !== '--dry');
 
 /* part tuple: [partId, displayName, layer, regex, {color?, quiz?}?]
  * regex is anchored and tested against the lowercased English name.
  * S = "(right|left) " prefix helper, OF = "of (the )?(right|left) " infix. */
-const S = '(right|left) ';
-const BONE = '#e8e0cf';
+export const S = '(right|left) ';
+export const BONE = '#e8e0cf';
 
-const PACKS = {
+export const PACKS = {
   // ================= SKELETON =================
   skeleton: {
     title: 'Human Skeleton',
@@ -351,98 +331,3 @@ const PACKS = {
     ],
   },
 };
-
-// ---------- shared machinery ----------
-console.log('fetching name list + file inventory…');
-const listTxt = await (await fetch(`${RAW}/parts_list_e.txt`)).text();
-const names = new Map();
-for (const line of listTxt.split('\n')) {
-  const [id, en] = line.trim().split('\t');
-  if (id?.startsWith('FMA') && en) names.set(id.replace(/"/g, ''), en);
-}
-const tree = await (await fetch(
-  'https://api.github.com/repos/Kevin-Mattheus-Moerman/BodyParts3D/git/trees/main?recursive=1'
-)).json();
-const stlSizes = new Map();
-for (const e of tree.tree) {
-  if (e.path.endsWith('.stl')) stlSizes.set(path.basename(e.path, '.stl'), e.size);
-}
-
-const packIds = wanted.length ? wanted : Object.keys(PACKS);
-const toDownload = new Set();
-
-for (const packId of packIds) {
-  const pack = PACKS[packId];
-  if (!pack) { console.error(`unknown pack "${packId}"`); process.exit(1); }
-  console.log(`\n===== ${packId} =====`);
-  const files = [];
-  const parts = {};
-  const misses = [];
-  const claimed = new Set(); // first part to match a file wins (within the pack)
-  let total = 0;
-
-  for (const [partId, name, layer, regexStr, opts = {}] of pack.parts) {
-    const re = new RegExp(`^(${regexStr})$`);
-    const hits = [];
-    for (const [fma, en] of names) {
-      if (!claimed.has(fma) && re.test(en.toLowerCase()) && stlSizes.has(fma)) hits.push(fma);
-    }
-    if (hits.length === 0) { misses.push(partId); continue; }
-    for (const fma of hits) {
-      claimed.add(fma);
-      files.push({ file: `${fma}.stl`, part: partId });
-      toDownload.add(fma);
-      total += stlSizes.get(fma);
-    }
-    parts[partId] = { name, layer, ...(opts.color ? { color: opts.color } : {}), ...(opts.quiz === false ? { quiz: false } : {}) };
-    console.log(`  ${partId.padEnd(26)} ×${String(hits.length).padEnd(3)} ${(hits.reduce((s, f) => s + stlSizes.get(f), 0) / 1e6).toFixed(1).padStart(6)} MB`);
-  }
-  if (misses.length) console.log(`  NO MATCHES: ${misses.join(', ')}`);
-  console.log(`  → ${files.length} files, ${(total / 1e6).toFixed(0)} MB`);
-
-  if (!dry) {
-    const layers = pack.layers.map((l) =>
-      pack.startGhostLayers?.includes(l.id) ? { ...l, ghost: true } : l);
-    const manifest = {
-      id: packId,
-      title: pack.title,
-      blurb: pack.blurb,
-      attribution: ATTRIB,
-      license: 'CC BY-SA 2.1 JP',
-      source: {
-        kind: 'stl-set',
-        dir: '../../bp3d/',
-        remote: `${RAW}/stl/`,   // used when the local cache isn't present
-        rotate: [-1.5707963, 0, 0],
-        files,
-      },
-      camera: pack.camera,
-      layers,
-      parts,
-      quizzes: pack.quizzes,
-    };
-    const dir = path.join(root, 'data/models', packId);
-    fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, 'manifest.json'), JSON.stringify(manifest, null, 2));
-    console.log(`  wrote data/models/${packId}/manifest.json`);
-  }
-}
-
-if (dry) process.exit(0);
-
-// ---------- download whatever isn't cached ----------
-fs.mkdirSync(CACHE, { recursive: true });
-const queue = [...toDownload].filter((fma) => !fs.existsSync(path.join(CACHE, `${fma}.stl`)));
-console.log(`\ndownloading ${queue.length} new files (${toDownload.size - queue.length} already cached)…`);
-let done = 0;
-async function worker() {
-  while (queue.length) {
-    const fma = queue.shift();
-    const res = await fetch(`${RAW}/stl/${fma}.stl`);
-    if (!res.ok) { console.error(`FAILED ${fma}: ${res.status}`); continue; }
-    fs.writeFileSync(path.join(CACHE, `${fma}.stl`), Buffer.from(await res.arrayBuffer()));
-    if (++done % 25 === 0) console.log(`  ${done}/${queue.length + done}`);
-  }
-}
-await Promise.all(Array.from({ length: 8 }, worker));
-console.log(`done: ${done} downloaded`);

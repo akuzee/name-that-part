@@ -18,20 +18,10 @@ cd name-that-part
 node tools/serve.mjs        # → http://localhost:8023
 ```
 
-That's it: every pack works immediately. Three.js is vendored in `vendor/`, the
-procedural models generate themselves at load time, and the anatomy packs
-stream their meshes from the upstream BodyParts3D mirror on demand.
-
-**Optional — cache the anatomy meshes locally** (much faster loads, works
-offline; ~620MB in `data/bp3d/`, gitignored):
-
-```sh
-npm install                       # only needed for the dev tools
-node tools/fetch-anatomy.mjs      # or: … skeleton heart  (just the packs you want)
-```
-
-The app prefers the local cache and falls back to streaming, so you can do this
-at any time — before playing, later, or never.
+That's it — every pack works immediately, offline, with nothing else to fetch.
+Three.js is vendored in `vendor/`, the procedural models generate themselves at
+load time, and the anatomy meshes ship in the repo as compressed glTF (35 MB
+for all five packs). `npm install` is only needed for the dev tools.
 
 ## Play
 
@@ -88,11 +78,11 @@ downloaded model.
 
 | Model | Source | Parts |
 |---|---|---|
-| Human Skeleton | BodyParts3D (CC BY-SA 2.1 JP) | 41 parts: skull bones, spine, thorax, limbs |
-| Torso Organs | BodyParts3D | 35 parts: viscera + great vessels, ghosted rib cage |
-| Heart | BodyParts3D | 14 parts: wall, valves, papillary muscles, coronaries |
+| Human Skeleton | BodyParts3D 4.0 (CC BY 4.0) | 41 parts: skull bones, spine, thorax, limbs |
+| Torso Organs | BodyParts3D | 37 parts: viscera + great vessels, ghosted rib cage |
+| Heart | BodyParts3D | 14 parts: chambers, valve leaflets, papillary muscles, coronaries |
 | Brain | BodyParts3D | 30 parts: gyri, deep structures, ventricles, brainstem |
-| Major Muscles | BodyParts3D | 55 parts over a ghosted skeleton |
+| Major Muscles | BodyParts3D | 54 parts over a ghosted skeleton |
 | House: Framing & Systems | procedural (`build.mjs`) | 41 part types: footing→ridge board, plumbing, HVAC, electrical |
 | Inline-4 Engine | procedural | 29 part types: block, rotating assembly, valvetrain, bolt-ons |
 | Whole Car | procedural | 38 parts: body panels + drivetrain, exhaust, fuel, suspension, steering, brakes under a ghosted shell |
@@ -104,12 +94,26 @@ downloaded model.
 Procedural models are generated as named Three.js meshes at load time — zero
 licensing burden, guaranteed-correct names, tiny payload.
 
-Anatomy packs are defined by code, not checked-in assets: `tools/fetch-anatomy.mjs`
-holds a `PACKS` table of `part → name-matching regex`, resolves it against the
-BodyParts3D structure list, and writes each manifest. The meshes themselves are
-never committed — the app streams them from the upstream mirror, or serves them
-from the optional local cache in `data/bp3d/` (gitignored). To regroup
-structures or add a pack, edit the regex table and re-run.
+Anatomy packs are defined by code: `tools/anatomy-packs.mjs` holds a table of
+`part → name-matching regex`, and `tools/build-anatomy.mjs` resolves it against
+the BodyParts3D structure list, merges the matching meshes into one glTF per
+pack, and writes the manifest. To regroup structures or add a pack, edit the
+regex table and rebuild:
+
+```sh
+curl -L -o data/bp3d4/isa.zip \
+  https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip
+unzip -q data/bp3d4/isa.zip -d data/bp3d4/obj     # 2,234 named structures
+node tools/build-anatomy.mjs --dry                # report matches
+node tools/build-anatomy.mjs                      # build GLBs + manifests
+```
+
+The build merges each pack into one OBJ (each part an `o <partId>` object) and
+runs it through `gltfpack -kn -cc`, which reindexes, quantizes and meshopt-
+compresses — 620 MB of source geometry becomes 35 MB of glTF. gltfpack's
+compression strips node names but preserves node order, so the builder writes
+the part ids back onto the nodes afterwards and fails loudly if the counts
+don't line up.
 
 
 ## Known limitation: model fidelity
@@ -132,7 +136,7 @@ a piston is a cylinder. This is the main area where contributions help:
 
 ## Sourcing real models (researched Sep 2026, see BACKLOG.md)
 
-- **Anatomy**: BodyParts3D (CC BY-SA 2.1 JP) — ~940 individually named
+- **Anatomy**: BodyParts3D (CC BY 4.0) — ~940 individually named
   structures as per-FMA-ID STLs on the Kevin-Mattheus-Moerman GitHub mirror;
   `parts_list_e.txt` maps FMA IDs → English names. Five packs shipped
   (skeleton, organs, heart, brain, muscles); Z-Anatomy (CC BY-SA) is the

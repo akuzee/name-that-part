@@ -4,16 +4,18 @@ Deferred ideas with rationale. Research findings dated 2026-09-01.
 
 ## Content: real models (researched, pipelines known)
 
-- **Anatomy: more packs / decimation** — five packs SHIPPED (2026-09-01):
-  skeleton, torso organs, heart, brain, muscles, all via tools/fetch-anatomy.mjs
-  from the BodyParts3D GitHub mirror (CC BY-SA 2.1 JP; ~940 structures, ~480
-  used). Remaining ideas: hand/foot pack (individual carpals/tarsals as quiz
-  targets, not groups), head & neck (eye, ear, larynx, salivary glands),
-  deep muscles (intercostals, transversus — huge meshes, need decimation
-  first). The muscles pack is 474MB of STL — meshoptimizer/gltfpack decimation
-  pass would cut load time 5-10x if it ever feels slow. Z-Anatomy (CC BY-SA,
-  Blender) has finer structures (heart chambers as cavities, more gyri) if
-  BodyParts3D granularity runs out.
+- **Anatomy: new packs now cheap to add** — five packs shipped, rebuilt
+  2026-09-21 onto BodyParts3D 4.0 (CC BY 4.0) via tools/build-anatomy.mjs;
+  620MB of source geometry now ships as 35MB of committed glTF. 4.0 has 2,234
+  structures and we use ~630, so the obvious next packs are nearly free:
+  **arteries (639 structures), veins (404), nerves (139), teeth**, plus a
+  hand/foot pack (individual carpals/tarsals as targets) and head & neck
+  (eye, ear, larynx). Add rows to tools/anatomy-packs.mjs and rebuild.
+  Note 4.0 dropped some structures 3.0 had (whole lungs/liver, masseter,
+  latissimus dorsi, rectus abdominis, quadratus lumborum, septum pellucidum);
+  the builder falls back to the 3.0 STL cache for those, so keep data/bp3d/
+  around when rebuilding. Z-Anatomy (CC BY-SA, Blender) remains the richer
+  alternative if 4.0 granularity runs out.
 - **Sketchfab CC-BY automotive models** — verified candidates (all CC-BY 4.0,
   need a free Sketchfab account to download; archive promptly, Fab/Epic
   migration makes longevity uncertain):
@@ -56,6 +58,28 @@ Deferred ideas with rationale. Research findings dated 2026-09-01.
   Gerhald "Car Chassis" (641k tris), Lexyc16 Mercedes 300 SL. CC0 Kenney Car
   Kit (account-free) is the base if we ever want prettier panels (cut+name in
   Blender, ~1hr). Procedural whole-car shipped instead.
+
+## AI 3D generation (researched 2026-09-21)
+
+Assessed Tripo and Hunyuan3D for generating multi-part models. Verdict:
+**generation cannot model internals it never saw** — an image-to-3D engine
+yields a plausible exterior, never a piston or a die stack — so it cannot fix
+the engine/chip/car packs. It is viable only for externally-visible subjects
+(laptop, phone, bicycle, PC).
+- **Tripo** is the only tool returning *semantically named* parts
+  (`/v3/mesh/smartsegment`, `hint` steers vocabulary, ~$0.55-0.85/call,
+  realistically $2-4/finished model). Free tier: **Tripo retains all rights to
+  outputs** — unusable here; a paid plan grants full rights.
+- **Hunyuan3D-Part / P3-SAM**: free, local, best-in-class mesh splitter, but
+  unnamed segments and its licence **excludes the EU/UK/South Korea and that
+  exclusion extends to outputs** — bad fit for a public repo.
+- **PartCrafter / HoloPart**: MIT for code *and* weights, unnamed parts; add a
+  VLM naming pass constrained to our existing answer key (~150 lines).
+- **CubePart** (SIGGRAPH 2026) is exactly the tool we'd want — text prompt plus
+  an open-vocabulary part schema — but no code is released. Watch it, and
+  SAM3D-Part.
+- Standing conclusion: real CAD assemblies already ship as named part
+  hierarchies, so sourcing beats generating for mechanical topics.
 
 ## Model fidelity (top contribution target)
 

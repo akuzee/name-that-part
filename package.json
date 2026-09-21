@@ -13,6 +13,8 @@
     "three": "^0.185.1"
   },
   "devDependencies": {
+    "gltfpack": "^1.2.0",
+    "meshoptimizer": "^1.2.0",
     "puppeteer-core": "^25.9.0"
   },
   "private": true
