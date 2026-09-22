@@ -31,6 +31,12 @@
       "badge": "BodyParts3D \u00b7 CC BY-SA"
     },
     {
+      "id": "turbofan",
+      "title": "Turbofan Jet Engine",
+      "blurb": "F110-class afterburning turbofan \u2014 100 named parts from spinner to nozzle.",
+      "badge": "krabduke \u00b7 MIT"
+    },
+    {
       "id": "house",
       "title": "House: Framing & Systems",
       "blurb": "Every stud, joist, duct and drain in a stick-framed house.",

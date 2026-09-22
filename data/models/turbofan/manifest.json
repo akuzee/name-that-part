@@ -1,0 +1,528 @@
+{
+  "id": "turbofan",
+  "title": "Turbofan Jet Engine",
+  "blurb": "An F110-class afterburning turbofan \u2014 fan, nine-stage compressor, combustor, turbines and nozzle, all 100 parts named.",
+  "attribution": "F110 turbofan model by Keenan Casalegno (github.com/krabduke/f110-turbofan), MIT License.",
+  "license": "MIT",
+  "source": {
+    "kind": "gltf",
+    "file": "turbofan.glb"
+  },
+  "camera": {
+    "theta": 0.9,
+    "phi": 1.25,
+    "zoom": 0.85
+  },
+  "layers": [
+    {
+      "id": "inlet-and-fan",
+      "name": "Inlet & fan",
+      "color": "#a8b4c2"
+    },
+    {
+      "id": "hp-compressor",
+      "name": "HP compressor",
+      "color": "#9aa8b8"
+    },
+    {
+      "id": "combustor",
+      "name": "Combustor",
+      "color": "#c07840"
+    },
+    {
+      "id": "turbines",
+      "name": "Turbines",
+      "color": "#b06058"
+    },
+    {
+      "id": "augmentor",
+      "name": "Augmentor",
+      "color": "#a05848"
+    },
+    {
+      "id": "nozzle",
+      "name": "Nozzle",
+      "color": "#7d8894"
+    },
+    {
+      "id": "casings-and-frames",
+      "name": "Casings & frames",
+      "color": "#6d7884"
+    },
+    {
+      "id": "shafts-and-bearings",
+      "name": "Shafts & bearings",
+      "color": "#c2c8d2"
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories",
+      "color": "#8a8058"
+    }
+  ],
+  "parts": {
+    "blades-fan-r": {
+      "name": "Fan blades (3 stages)",
+      "layer": "inlet-and-fan"
+    },
+    "blades-hpc-r": {
+      "name": "HP compressor blades (9 stages)",
+      "layer": "hp-compressor"
+    },
+    "brg-1-lp-thrust": {
+      "name": "No. 1 bearing (LP thrust)",
+      "layer": "shafts-and-bearings"
+    },
+    "brg-2-lp-roller": {
+      "name": "No. 2 bearing (LP roller)",
+      "layer": "shafts-and-bearings"
+    },
+    "brg-3-hp-thrust": {
+      "name": "No. 3 bearing (HP thrust)",
+      "layer": "shafts-and-bearings"
+    },
+    "brg-4-hp-roller": {
+      "name": "No. 4 bearing (HP roller)",
+      "layer": "shafts-and-bearings"
+    },
+    "brg-5-lp-roller": {
+      "name": "No. 5 bearing (LP roller)",
+      "layer": "shafts-and-bearings"
+    },
+    "fan-disc-assembly": {
+      "name": "Fan disc assembly",
+      "layer": "inlet-and-fan"
+    },
+    "fan-interstage-seals": {
+      "name": "Fan interstage seals",
+      "layer": "inlet-and-fan"
+    },
+    "hpc-drum": {
+      "name": "HP compressor drum",
+      "layer": "hp-compressor"
+    },
+    "hpc-front-cone": {
+      "name": "HPC front cone",
+      "layer": "hp-compressor"
+    },
+    "hpc-interstage-seals": {
+      "name": "HPC interstage seals",
+      "layer": "hp-compressor"
+    },
+    "hpc-rear-cone": {
+      "name": "HPC rear cone",
+      "layer": "hp-compressor"
+    },
+    "shaft-hp": {
+      "name": "HP shaft",
+      "layer": "shafts-and-bearings"
+    },
+    "shaft-lp": {
+      "name": "LP shaft",
+      "layer": "shafts-and-bearings"
+    },
+    "spinner": {
+      "name": "Spinner (nose cone)",
+      "layer": "inlet-and-fan"
+    },
+    "bypass-inner-wall": {
+      "name": "Bypass duct inner wall",
+      "layer": "casings-and-frames"
+    },
+    "bypass-struts": {
+      "name": "Bypass struts",
+      "layer": "casings-and-frames"
+    },
+    "casing-augmentor": {
+      "name": "Augmentor casing",
+      "layer": "casings-and-frames"
+    },
+    "casing-bypass": {
+      "name": "Bypass duct casing",
+      "layer": "casings-and-frames"
+    },
+    "casing-combustor": {
+      "name": "Combustor casing",
+      "layer": "casings-and-frames"
+    },
+    "casing-fan": {
+      "name": "Fan casing",
+      "layer": "casings-and-frames"
+    },
+    "casing-hpc": {
+      "name": "HPC casing",
+      "layer": "casings-and-frames"
+    },
+    "casing-inlet": {
+      "name": "Inlet casing",
+      "layer": "casings-and-frames"
+    },
+    "casing-turbine": {
+      "name": "Turbine casing",
+      "layer": "casings-and-frames"
+    },
+    "fan-frame-hub": {
+      "name": "Fan frame hub",
+      "layer": "casings-and-frames"
+    },
+    "fan-frame-struts": {
+      "name": "Fan frame struts",
+      "layer": "casings-and-frames"
+    },
+    "flange-aug-aft": {
+      "name": "Flange Aug Aft",
+      "layer": "casings-and-frames"
+    },
+    "flange-comb-aft": {
+      "name": "Flange Comb Aft",
+      "layer": "casings-and-frames"
+    },
+    "flange-fan-rear": {
+      "name": "Flange Fan Rear",
+      "layer": "casings-and-frames"
+    },
+    "flange-hpc-aft": {
+      "name": "Flange Hpc Aft",
+      "layer": "casings-and-frames"
+    },
+    "flange-hpc-fwd": {
+      "name": "Flange Hpc Fwd",
+      "layer": "casings-and-frames"
+    },
+    "flange-inlet": {
+      "name": "Flange Inlet",
+      "layer": "casings-and-frames"
+    },
+    "flange-turb-aft": {
+      "name": "Flange Turb Aft",
+      "layer": "casings-and-frames"
+    },
+    "inlet-case": {
+      "name": "Inlet case",
+      "layer": "casings-and-frames"
+    },
+    "inlet-lip": {
+      "name": "Inlet lip",
+      "layer": "casings-and-frames"
+    },
+    "mount-trunnions": {
+      "name": "Engine mount trunnions",
+      "layer": "accessories"
+    },
+    "splitter": {
+      "name": "Flow splitter",
+      "layer": "casings-and-frames"
+    },
+    "turbine-frame-hub": {
+      "name": "Turbine frame hub",
+      "layer": "casings-and-frames"
+    },
+    "turbine-frame-struts": {
+      "name": "Turbine frame struts",
+      "layer": "casings-and-frames"
+    },
+    "vanes-fan-ogv": {
+      "name": "Outlet guide vanes (OGV)",
+      "layer": "inlet-and-fan"
+    },
+    "vanes-fan-s": {
+      "name": "Fan stator vanes",
+      "layer": "inlet-and-fan"
+    },
+    "vanes-hpc-s": {
+      "name": "HP compressor stator vanes",
+      "layer": "hp-compressor"
+    },
+    "vanes-igv": {
+      "name": "Inlet guide vanes (IGV)",
+      "layer": "inlet-and-fan"
+    },
+    "variable-vane-actuation": {
+      "name": "Variable vane actuation",
+      "layer": "inlet-and-fan"
+    },
+    "combustor-dome": {
+      "name": "Combustor dome",
+      "layer": "combustor"
+    },
+    "combustor-liner-inner": {
+      "name": "Combustor liner (inner)",
+      "layer": "combustor"
+    },
+    "combustor-liner-outer": {
+      "name": "Combustor liner (outer)",
+      "layer": "combustor"
+    },
+    "combustor-swirlers": {
+      "name": "Combustor swirlers",
+      "layer": "combustor"
+    },
+    "diffuser": {
+      "name": "Diffuser",
+      "layer": "combustor"
+    },
+    "fuel-manifold": {
+      "name": "Fuel manifold",
+      "layer": "combustor"
+    },
+    "fuel-nozzles": {
+      "name": "Fuel nozzles",
+      "layer": "combustor"
+    },
+    "igniters": {
+      "name": "Igniters",
+      "layer": "combustor"
+    },
+    "blades-hpt-ngv": {
+      "name": "HP turbine nozzle guide vanes (NGV)",
+      "layer": "turbines"
+    },
+    "blades-hpt-r": {
+      "name": "HP turbine blades",
+      "layer": "turbines"
+    },
+    "blades-lpt-r": {
+      "name": "LP turbine blades",
+      "layer": "turbines"
+    },
+    "blades-lpt-s": {
+      "name": "LP turbine stator vanes",
+      "layer": "turbines"
+    },
+    "hpt-disc": {
+      "name": "HP turbine disc",
+      "layer": "turbines"
+    },
+    "lpt-disc-assembly": {
+      "name": "LP turbine disc assembly",
+      "layer": "turbines"
+    },
+    "turbine-blade-outer-air-seals": {
+      "name": "Blade outer air seals",
+      "layer": "turbines"
+    },
+    "turbine-inner-flowpath": {
+      "name": "Turbine inner flowpath",
+      "layer": "turbines"
+    },
+    "turbine-interstage-seals": {
+      "name": "Turbine interstage seals",
+      "layer": "turbines"
+    },
+    "augmentor-liner": {
+      "name": "Augmentor (afterburner) liner",
+      "layer": "augmentor"
+    },
+    "flameholder": {
+      "name": "Flameholder",
+      "layer": "augmentor"
+    },
+    "mixer": {
+      "name": "Mixer",
+      "layer": "augmentor"
+    },
+    "spraybars": {
+      "name": "Afterburner spray bars",
+      "layer": "augmentor"
+    },
+    "nozzle-actuator-ring": {
+      "name": "Nozzle actuator ring",
+      "layer": "nozzle"
+    },
+    "nozzle-actuators": {
+      "name": "Nozzle actuators",
+      "layer": "nozzle"
+    },
+    "nozzle-ext-flaps": {
+      "name": "External nozzle flaps",
+      "layer": "nozzle"
+    },
+    "nozzle-flaps-convergent": {
+      "name": "Convergent nozzle flaps",
+      "layer": "nozzle"
+    },
+    "nozzle-flaps-divergent": {
+      "name": "Divergent nozzle flaps",
+      "layer": "nozzle"
+    },
+    "nozzle-links": {
+      "name": "Nozzle links",
+      "layer": "nozzle"
+    },
+    "nozzle-seals": {
+      "name": "Nozzle seals",
+      "layer": "nozzle"
+    },
+    "access-panels": {
+      "name": "Access panels",
+      "layer": "accessories"
+    },
+    "antiice-duct": {
+      "name": "Anti-ice duct",
+      "layer": "accessories"
+    },
+    "bearing-sumps": {
+      "name": "Bearing sumps",
+      "layer": "accessories"
+    },
+    "bleed-pipes": {
+      "name": "Bleed air pipes",
+      "layer": "accessories"
+    },
+    "borescope-ports": {
+      "name": "Borescope ports",
+      "layer": "accessories"
+    },
+    "engine-control": {
+      "name": "Engine control unit (FADEC)",
+      "layer": "accessories"
+    },
+    "fan-containment": {
+      "name": "Fan containment ring",
+      "layer": "inlet-and-fan"
+    },
+    "fan-cowl-door": {
+      "name": "Fan cowl door",
+      "layer": "accessories"
+    },
+    "fan-door-hardware": {
+      "name": "Cowl door hardware",
+      "layer": "accessories",
+      "quiz": false
+    },
+    "fuel-lines": {
+      "name": "Fuel lines",
+      "layer": "accessories"
+    },
+    "gearbox": {
+      "name": "Accessory gearbox",
+      "layer": "accessories"
+    },
+    "harnesses": {
+      "name": "Wiring harnesses",
+      "layer": "accessories"
+    },
+    "heat-exchanger": {
+      "name": "Heat exchanger",
+      "layer": "accessories"
+    },
+    "ignition-exciters": {
+      "name": "Ignition exciters",
+      "layer": "accessories"
+    },
+    "inlet-probes": {
+      "name": "Inlet probes",
+      "layer": "accessories"
+    },
+    "mount-links-rear": {
+      "name": "Rear mount links",
+      "layer": "accessories"
+    },
+    "oil-lines": {
+      "name": "Oil lines",
+      "layer": "accessories"
+    },
+    "oil-tank": {
+      "name": "Oil tank",
+      "layer": "accessories"
+    },
+    "panel-bolts": {
+      "name": "Panel bolts",
+      "layer": "accessories",
+      "quiz": false
+    },
+    "t5-harness": {
+      "name": "T5 thermocouple harness",
+      "layer": "accessories"
+    },
+    "towershaft": {
+      "name": "Tower shaft",
+      "layer": "accessories"
+    },
+    "turbine-cooling-manifold": {
+      "name": "Turbine cooling manifold",
+      "layer": "turbines"
+    },
+    "vbv-doors": {
+      "name": "Variable bleed valve doors",
+      "layer": "accessories"
+    }
+  },
+  "quizzes": [
+    {
+      "id": "gas-path",
+      "title": "The gas path",
+      "subtitle": "Follow the air: inlet to afterburner",
+      "parts": [
+        "spinner",
+        "blades-fan-r",
+        "vanes-igv",
+        "vanes-fan-s",
+        "vanes-fan-ogv",
+        "splitter",
+        "blades-hpc-r",
+        "vanes-hpc-s",
+        "diffuser",
+        "combustor-dome",
+        "fuel-nozzles",
+        "combustor-liner-outer",
+        "igniters",
+        "blades-hpt-ngv",
+        "blades-hpt-r",
+        "blades-lpt-r",
+        "blades-lpt-s",
+        "mixer",
+        "flameholder",
+        "spraybars",
+        "augmentor-liner",
+        "nozzle-flaps-convergent",
+        "nozzle-flaps-divergent"
+      ]
+    },
+    {
+      "id": "rotating",
+      "title": "Rotating assembly",
+      "subtitle": "Spools, discs, blades and bearings",
+      "parts": [
+        "spinner",
+        "fan-disc-assembly",
+        "blades-fan-r",
+        "hpc-drum",
+        "blades-hpc-r",
+        "hpt-disc",
+        "blades-hpt-r",
+        "lpt-disc-assembly",
+        "blades-lpt-r",
+        "shaft-lp",
+        "shaft-hp",
+        "brg-1-lp-thrust",
+        "brg-2-lp-roller",
+        "brg-3-hp-thrust",
+        "brg-4-hp-roller",
+        "brg-5-lp-roller"
+      ]
+    },
+    {
+      "id": "casings",
+      "title": "Casings & frames",
+      "subtitle": "The structural shell",
+      "parts": {
+        "layer": "casings-and-frames"
+      }
+    },
+    {
+      "id": "accessories",
+      "title": "Accessories",
+      "subtitle": "Gearbox, pumps, plumbing and control",
+      "parts": {
+        "layer": "accessories"
+      }
+    },
+    {
+      "id": "all",
+      "title": "Everything",
+      "subtitle": "All 100 parts",
+      "parts": "all"
+    }
+  ]
+}
