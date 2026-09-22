@@ -12,6 +12,7 @@ import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 import { STLLoader } from 'three/addons/loaders/STLLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { HDRLoader } from 'three/addons/loaders/HDRLoader.js';
 import { mapNodeName, autoSlug, prettyName } from './data.js';
 
 const STATE_COLORS = {
@@ -36,10 +37,18 @@ export class Viewer {
     this.renderer.toneMappingExposure = 1.15;
     this.scene = new THREE.Scene();
     this.scene.background = new THREE.Color(0x14161a);
+    // IBL: a real studio HDRI (Poly Haven studio_small_09, CC0) gives metals
+    // and plastics believable speculars; RoomEnvironment covers the gap while
+    // it loads (and stays as the fallback if the fetch fails).
     const pmrem = new THREE.PMREMGenerator(this.renderer);
     this.scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
     this.scene.environmentIntensity = 0.55;
-    pmrem.dispose();
+    new HDRLoader().load('assets/env/studio_small_09_1k.hdr', (tex) => {
+      tex.mapping = THREE.EquirectangularReflectionMapping;
+      this.scene.environment = tex;
+      this.scene.environmentIntensity = 0.75;
+      pmrem.dispose();
+    }, undefined, () => pmrem.dispose());
 
     this.camera = new THREE.PerspectiveCamera(45, 1, 0.01, 5000);
     this.controls = new OrbitControls(this.camera, canvas);
@@ -233,6 +242,28 @@ export class Viewer {
       clippingPlanes: [this.section.plane],
       clipShadows: true,
     });
+    // repeated parts (30 studs, 24 ribs) look stamped-out when identical:
+    // a tiny deterministic per-mesh lightness jitter breaks the uniformity
+    const jitterSeed = this._jitterCounter = (this._jitterCounter || 0) + 1;
+    const j = ((jitterSeed * 2654435761) % 97) / 97 - 0.5;
+    color.offsetHSL(j * 0.012, 0, j * 0.05);
+
+    // and a whisper of world-space roughness noise kills the perfect-CG sheen
+    mat.onBeforeCompile = (shader) => {
+      shader.vertexShader = shader.vertexShader
+        .replace('#include <common>', '#include <common>\nvarying vec3 vNoisePos;')
+        .replace('#include <begin_vertex>',
+          '#include <begin_vertex>\nvNoisePos = (modelMatrix * vec4(position, 1.0)).xyz;');
+      shader.fragmentShader = shader.fragmentShader
+        .replace('#include <common>', `#include <common>
+varying vec3 vNoisePos;
+float pgNoise(vec3 p) {
+  return fract(sin(dot(floor(p * 40.0), vec3(12.9898, 78.233, 37.719))) * 43758.5453);
+}`)
+        .replace('#include <roughnessmap_fragment>', `#include <roughnessmap_fragment>
+roughnessFactor = clamp(roughnessFactor * (0.88 + 0.24 * pgNoise(vNoisePos)), 0.03, 1.0);`);
+    };
+
     mat.userData.baseColor = color.clone();
     return mat;
   }
