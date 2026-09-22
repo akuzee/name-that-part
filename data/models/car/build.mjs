@@ -51,19 +51,47 @@ export function build(THREE) {
   const WR = 0.32;                    // wheel radius
   const FLOOR = 0.38;
 
-  // ---------- body shell (ghost layer): extruded side profile ----------
+  // ---------- body shell (ghost layer): beveled extrusion, curved roofline ----------
   const s = new THREE.Shape();
-  s.moveTo(2.3, 0.45);
-  s.lineTo(2.28, 0.75); s.lineTo(1.35, 0.88);   // hood line
-  s.lineTo(0.75, 1.32); s.lineTo(-0.55, 1.34);  // windshield → roof
-  s.lineTo(-1.35, 0.95); s.lineTo(-2.25, 0.88); // rear glass → trunk
-  s.lineTo(-2.3, 0.45); s.lineTo(-1.9, 0.32);   // rear bumper bottom
-  s.lineTo(1.95, 0.32); s.closePath();          // rocker line
-  const shellGeo = new THREE.ExtrudeGeometry(s, { depth: 1.64, bevelEnabled: false });
+  s.moveTo(2.32, 0.38);
+  s.lineTo(2.36, 0.62);
+  s.quadraticCurveTo(2.2, 0.82, 1.4, 0.9);       // hood
+  s.quadraticCurveTo(0.95, 0.95, 0.68, 1.28);    // windshield
+  s.quadraticCurveTo(0.25, 1.38, -0.45, 1.36);   // roof
+  s.quadraticCurveTo(-1.0, 1.32, -1.5, 0.98);    // rear glass
+  s.quadraticCurveTo(-1.9, 0.9, -2.26, 0.86);    // trunk
+  s.lineTo(-2.32, 0.4);
+  s.lineTo(-1.9, 0.28);
+  s.lineTo(1.95, 0.28);
+  s.closePath();
+  const shellGeo = new THREE.ExtrudeGeometry(s, {
+    depth: 1.5, bevelEnabled: true, bevelThickness: 0.09, bevelSize: 0.09,
+    bevelSegments: 4, curveSegments: 24,
+  });
   const shell = new THREE.Mesh(shellGeo, stub);
-  shell.position.z = -0.82;
+  shell.position.z = -0.75;
   shell.userData.part = 'body-shell';
   root.add(shell);
+
+  // glass, lights and grille: the visible face of the car
+  // glass panes: length runs across the car (z), rake tilts about the z axis
+  function glass(part, w, h, x, y, tiltZ) {
+    const m = box(part, 0.015, h, w, x, y, 0);
+    m.rotation.z = tiltZ;
+    return m;
+  }
+  glass('windshield', 1.4, 0.46, 0.8, 1.08, 0.7);      // top leans rearward
+  glass('rear-window', 1.15, 0.36, -1.22, 1.08, -0.85);   // top leans forward
+  for (const side of [-1, 1]) {
+    const w1 = box('side-window', 0.6, 0.3, 0.015, 0.26, 1.08, side * 0.78);
+    const w2 = box('side-window', 0.52, 0.28, 0.015, -0.44, 1.08, side * 0.78);
+    w1.rotation.x = side * 0.12;
+    w2.rotation.x = side * 0.12;
+    cyl('headlight', 0.09, 0.03, 2.36, 0.68, side * 0.52, 'x');
+    box('taillight', 0.03, 0.09, 0.3, -2.34, 0.68, side * 0.55);
+  }
+  box('grille', 0.03, 0.16, 0.85, 2.37, 0.5, 0);
+  box('license-plate', 0.02, 0.13, 0.36, 2.4, 0.44, 0);
 
   // ---------- named exterior panels (thin plates just outside the shell) ----------
   box('hood', 0.85, 0.02, 1.5, 1.78, 0.83, 0);
@@ -110,13 +138,21 @@ export function build(THREE) {
   // ---------- wheels & brakes ----------
   for (const [ax, side] of [[FA, -1], [FA, 1], [RA, -1], [RA, 1]]) {
     const z = side * TRACK;
-    const tire = new THREE.Mesh(new THREE.TorusGeometry(WR * 0.78, WR * 0.26, 14, 28), stub);
+    const tire = new THREE.Mesh(new THREE.TorusGeometry(WR * 0.76, WR * 0.28, 18, 36), stub);
     tire.position.set(ax, WR, z);
     tire.userData.part = 'tire';
     root.add(tire);
-    cyl('wheel-rim', WR * 0.55, 0.2, ax, WR, z, 'z');
-    cyl('brake-disc', WR * 0.48, 0.03, ax, WR, z - side * 0.14, 'z');
-    box('brake-caliper', 0.1, 0.14, 0.06, ax, WR + 0.14, z - side * 0.16);
+    // rim: outer barrel + hub + 5 spokes
+    cyl('wheel-rim', WR * 0.56, 0.16, ax, WR, z, 'z');
+    cyl('wheel-rim', WR * 0.16, 0.2, ax, WR, z + side * 0.02, 'z');
+    for (let i = 0; i < 5; i++) {
+      const a = (i / 5) * Math.PI * 2;
+      const sp = box('wheel-rim', 0.05, WR * 0.44, 0.03,
+        ax + Math.sin(a) * WR * 0.28, WR + Math.cos(a) * WR * 0.28, z + side * 0.055);
+      sp.rotation.z = -a;
+    }
+    cyl('brake-disc', WR * 0.46, 0.03, ax, WR, z - side * 0.13, 'z');
+    box('brake-caliper', 0.1, 0.14, 0.06, ax, WR + 0.13, z - side * 0.15);
   }
 
   // ---------- suspension & steering ----------
