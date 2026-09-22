@@ -160,6 +160,7 @@ export class Viewer {
           name: def.name || prettyName(partId),
           layer: def.layer || null,
           quiz: def.quiz !== false,
+          baseOpacity: def.opacity ?? 1,   // per-part translucency (membranes, fluids)
           meshes: [],
         };
         this.parts.set(partId, part);
@@ -356,6 +357,8 @@ export class Viewer {
       } else if (this.xray > 0) {
         opacity = Math.max(XRAY_MIN_OPACITY, 1 - this.xray);
       }
+
+      if (part.baseOpacity < 1 && !solved) opacity *= part.baseOpacity;
 
       if (revealOn) {
         if (part.id === this.revealTarget) {
