@@ -78,6 +78,7 @@ downloaded model.
 
 | Model | Source | Parts |
 |---|---|---|
+| Turbofan Jet Engine | [krabduke/f110-turbofan](https://github.com/krabduke/f110-turbofan) (MIT) | 96 parts: fan, 9-stage compressor, combustor, turbines, augmentor, nozzle |
 | Human Skeleton | BodyParts3D 4.0 (CC BY 4.0) | 41 parts: skull bones, spine, thorax, limbs |
 | Torso Organs | BodyParts3D | 37 parts: viscera + great vessels, ghosted rib cage |
 | Heart | BodyParts3D | 14 parts: chambers, valve leaflets, papillary muscles, coronaries |
@@ -134,7 +135,13 @@ a piston is a cylinder. This is the main area where contributions help:
   `build.mjs` — more detailed geometry (bird's-mouthed rafters, a bored engine
   block, ribbed organelles) is a pure-code contribution with no asset pipeline.
 
-## Sourcing real models (researched Sep 2026, see BACKLOG.md)
+## Sourcing real models
+
+**[SOURCES.md](SOURCES.md)** is the working list: what's shipped, what can be
+fetched without an account, what needs a free Printables/Thingiverse/Sketchfab
+login, and what's disqualified on licensing so nobody researches it twice.
+
+Earlier findings (Sep 2026), also in BACKLOG.md:
 
 - **Anatomy**: BodyParts3D (CC BY 4.0) — ~940 individually named
   structures as per-FMA-ID STLs on the Kevin-Mattheus-Moerman GitHub mirror;
