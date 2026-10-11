@@ -62,6 +62,22 @@ and clicking any of them answers "Stud". Mesh→part mapping:
 Quizzes are declarative: `"parts": "all"`, an explicit id list, or
 `{"layer": "plumbing"}`.
 
+### Importing a downloaded kit
+
+```sh
+node tools/import-kit.mjs inbox/electric-motor --id electric-motor \
+  --title "Electric Motor" --license "CC BY 4.0" \
+  --attribution "Electric Motor Model by EffACe (thingiverse.com/thing:5857212)"
+```
+
+Takes a folder of STL / 3MF / OBJ files (zips are unpacked), names each part
+after its file (`Motor-Rotor.stl` → `rotor`, with a kit-wide prefix stripped),
+welds and caps each mesh at 80k triangles, bakes creased smooth normals, and
+writes one compressed GLB plus a manifest. Re-running merges into the existing
+manifest without touching curated names, layers, colours or quizzes; regex
+renaming/ignore rules go in `data/models/<id>/import.json` (see the header of
+`tools/import-kit.mjs`). `node tools/test-import.mjs` covers every reader.
+
 ### Onboarding a downloaded model
 
 ```sh
@@ -171,5 +187,8 @@ data/index.json       model catalog
 data/models/<id>/     manifest.json + model.glb or build.mjs
 tools/serve.mjs       zero-dependency static server (no npm install needed)
 tools/inspect-glb.mjs GLB node-name report + manifest drafter
+tools/import-kit.mjs  STL/3MF/OBJ kit folder → GLB + manifest
+tools/build-anatomy.mjs BodyParts3D → anatomy GLBs
+tools/lib/            shared GLB packing + mesh readers
 vendor/               three.js modules (pinned, no build step)
 ```

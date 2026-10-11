@@ -4,7 +4,7 @@
   "description": "Seterra for objects: 3D part-naming quiz games",
   "scripts": {
     "serve": "node tools/serve.mjs",
-    "test": "node tools/audit.mjs && node tools/test-quiz.mjs house framing && node tools/test-quiz.mjs engine-i4 all"
+    "test": "node tools/test-import.mjs && node tools/audit.mjs && node tools/test-quiz.mjs house framing && node tools/test-quiz.mjs engine-i4 all"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,6 @@
     "meshoptimizer": "^1.2.0",
     "puppeteer-core": "^25.9.0"
   },
-  "private": true
+  "private": true,
+  "type": "module"
 }

@@ -21,7 +21,6 @@ Not yet integrated; `curl` works today.
 
 | Subject | URL | License | Notes |
 |---|---|---|---|
-| Apollo 11 hatch mechanism | Commons API: `action=query&list=search&srsearch=Apollo 11 Hatch Crew Smithsonian filetype:3d` | **CC0** | 334 STLs, ~150 named mechanism parts (`Latch Arm`, `Main Ratchet Gear`, `Ball Follower`, `Plunger`). Rich ratchet/linkage assembly. Needs curation — many files are plain pins/bushings, and Commons throttles hard (use a real UA + 1.5s delay). |
 | Z-Anatomy | [Models-of-human-anatomy](https://github.com/Z-Anatomy/Models-of-human-anatomy) `Z-Anatomy.zip`, 87MB | CC BY-SA 4.0 | Finer than BodyParts3D: eye, ear, teeth. Blender → glTF export needed. |
 | Z-Anatomy for web | [nqwrc/3d-anatomy](https://github.com/nqwrc/3d-anatomy) `public/models/*.glb` | CC BY-SA | 7 GLBs by system, already web-ready, Terminologia Anatomica names. |
 | Low-poly vehicles | [OpenGameArt](https://opengameart.org/sites/default/files/free_low_poly_vehicles_pack_by_rgsdev.zip) | **CC0** | 20 vehicles, FBX. Only body/wheels/lights granularity. |
@@ -30,6 +29,38 @@ Not yet integrated; `curl` works today.
 **Provenance-flagged — decide before shipping:**
 - [ETA-6497 watch movement](https://github.com/jmogl/ETA-6497_Watch_Movement_Sim) — GLB with **221 named horology parts** (`105_BarrelBridge`, `180_BarrelMainSpring`, `201_CenterWheel`). Repo is MIT, but its README says the meshes derive from a GrabCAD model, and GrabCAD's terms are non-commercial/no-redistribution. The MIT stamp may not be the author's to give. Would be a superb pack; needs a licensing call first.
 - Khronos [2CylinderEngine](https://github.com/KhronosGroup/glTF-Sample-Models) / GearboxAssy — **no explicit license**, and dropped from the successor sample repo. 2CylinderEngine names only piston/rod/lifter; GearboxAssy is all `body_N`.
+
+## Your checklist: downloads that need an account
+
+Accounts are yours to create (credentials, terms, email verification) — free on
+all three sites. After that, each download is: **click download → put the files
+in the folder below → tell Claude**. The importer does the rest
+(`tools/import-kit.mjs`: STL/3MF/OBJ, zips unpacked, part names from
+filenames, one compressed GLB out).
+
+Ranked by payoff — the first four replace the weakest procedural packs:
+
+| # | Get | Put files in | Replaces / adds |
+|---|---|---|---|
+| 1 | [Animal & plant cell kit, thing:1242293](https://www.thingiverse.com/thing:1242293) (CC BY) | `inbox/cell-kit/` | both cell packs |
+| 2 | [Plant cell, printables 295227](https://www.printables.com/model/295227-small-plant-cell-model-for-biology) (CC0) | `inbox/plant-cell/` | plant cell (alt) |
+| 3 | [Animal cell, printables 1144666](https://www.printables.com/model/1144666-animal-cell-model) (CC BY) | `inbox/animal-cell/` | animal cell (alt) |
+| 4 | [Peony flower, printables 1650501](https://www.printables.com/model/1650501-paeonia-sp-peony) (CC BY-SA) | `inbox/flower/` | flower |
+| 5 | [4-stroke engine, thing:4082307](https://www.thingiverse.com/thing:4082307) (CC BY) | `inbox/four-stroke/` | engine (real crank/cam/valves) |
+| 6 | [Cutaway door lock, printables 250197](https://www.printables.com/model/250197-cutaway-lock) (CC BY) | `inbox/door-lock/` | new pack |
+| 7 | [Electric motor, thing:5857212](https://www.thingiverse.com/thing:5857212) (CC BY) | `inbox/electric-motor/` | new pack |
+| 8 | [Leaf layers, printables 1208610](https://www.printables.com/model/1208610-leaf-anatomy-layers-structure) (CC BY-SA) | `inbox/leaf/` | new pack |
+| 9 | [DNA kit, printables 187539](https://www.printables.com/model/187539-folding-dna-model-kit) (CC BY) | `inbox/dna/` | new pack |
+| 10 | [Mechanical watch, thing:1249221](https://www.thingiverse.com/thing:1249221) (CC BY) | `inbox/watch/` | new pack |
+
+Sketchfab downloads arrive as `.glb` already — drop them in `inbox/` too; those
+go through `tools/inspect-glb.mjs --manifest` instead of the importer.
+
+**One thing the importer can't fix:** print kits are often laid out flat on a
+print bed rather than assembled. It detects a pile of co-located parts and falls
+back to a tidy "parts tray" layout, and `--layout assembled|tray` overrides the
+guess. A tray still quizzes fine, but an assembled kit teaches more, so check
+the model page's photos for an assembled export when there's a choice.
 
 ## Bucket B — needs a free account (download in a browser, then drop in)
 
@@ -108,6 +139,7 @@ of the realism; texture files are garnish. Don't ship 1K sets for everything.
 | NIH 3D | Single fused print meshes — no parts to click |
 | Smithsonian / MyMiniFactory scans | Fused single meshes |
 | OpenGameArt bicycle | Verified: one fused mesh |
+| Apollo 11 hatch (Commons, CC0) | Downloaded all 324 files and checked bounding boxes: every part is exported in its **own local frame**, with **mixed units** (Main Ratchet Gear ≈2 across = inches; Hatch Frame ≈1037 = mm), and the only assembled geometry (`Hatch.stl`, 4M triangles) is one fused mesh. No placement data exists to rebuild the mechanism, so a quiz would be loose parts with no context. Superb names, unusable layout. |
 | Onshape | Free-plan public docs grant rights by ToS, not a license; account needed even to view |
 | Thangs, Phenome10K | Bot-walled (403), unverifiable |
 | FreePBR | Not CC0 — prohibits redistributing the texture files |
